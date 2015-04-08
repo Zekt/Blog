@@ -28,15 +28,108 @@ Released   : 20100928
         
 				<div id="content">
 					<div class="post">
-						<h2 class="title"><a href="/my-first-review.html">My First Review</a></h2>
-						<p class="meta"><span class="date">Le  </span><span class="posted">Par <a href="#">Zekt</a></span><span>&nbsp; | Catégorie : <a href="/category/review.html">Review</a></span></p>
-					<p class="meta">Tags : </p>
+						<h2 class="title"><a href="/c-han-shu-can-shu-referencegen-zhi-biao-hun-yong-zao-cheng-de-lvaluegen-rvaluewen-ti.html">C++ 函數參數Reference跟指標混用造成的lvalue跟rvalue問題</a></h2>
+						<p class="meta"><span class="date">Le  </span><span class="posted">Par <a href="#">Zekt</a></span><span>&nbsp; | Catégorie : <a href="/category/yu-yan.html">語言</a></span></p>
+					<p class="meta">Tags : <span><a href="/tag/c.html">C++</a> / </span>
+</p>
 						<div style="clear: both;">&nbsp;</div>
 						<div class="entry">
-						 <p>Following is a review of my favorite mechanical keyboard.</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">repuests</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&#39;the fuck@@&#39;</span><span class="p">)</span>
-</pre></div>	
+						 <p>某次在寫stack題時出現的code，因為題目中pop stack A時必定會push一元素進stack A，然後我很無聊的想把pop跟push一起解決因此出現下面的code:</p>
+<p>宣告的部份，一個stack由一堆elem構成，
+用最上面的elem作為top代表一個stack，
+因為top會變動故Call by reference。
+因為題目有如上性質令pop時會回傳新的top。</p>
+<div class="highlight"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+<span class="n">elem</span><span class="o">*</span> <span class="nf">pop</span><span class="p">(</span><span class="n">elem</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+</pre></div>
+
+
+<p>依據題目性質，stack A pop時直接將新元素push進stack A:</p>
+<div class="highlight"><pre><span class="n">push</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">pop</span><span class="p">(</span><span class="n">A</span><span class="p">));</span>
+</pre></div>
+
+
+<p>這時就噴錯了，登登！</p>
+<div class="highlight"><pre>error: invalid initialization of non-const reference of type ‘elem*&amp;’ from an rvalue of type ‘elem*’
+</pre></div>
+
+
+<p>阿，原來是call by reference時不能丟rvalue的reference當parameter，因為這樣rvalue的值可能會被直接變動
+這好像是常識...Orz
+那應該有兩個解決辦法：</p>
+<ol>
+<li>
+<p>分開寫就好(不要罵我髒話(つд⊂))，不過只是因為這個狀況函數其實不需要回傳東西，其他狀況的話應該要存到暫時變數：</p>
+<div class="highlight"><pre><span class="n">pop</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+<span class="n">push</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">A</span><span class="p">);</span>
+<span class="c1">//work!!</span>
+
+<span class="n">elem</span><span class="o">*</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">pop</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+<span class="n">push</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">tmp</span><span class="p">);</span>
+<span class="c1">//一般情形，就是pop回傳的東西才是重點的情況</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>宣告時加const使reference不能被變動:</p>
+<div class="highlight"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="n">elem</span><span class="o">*</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+
+<span class="p">...</span>
+
+<span class="n">push</span><span class="p">(</span><span class="n">pop</span><span class="p">(</span><span class="n">A</span><span class="p">),</span> <span class="n">B</span><span class="p">);</span>
+</pre></div>
+
+
+</li>
+</ol>
+<p>又噴錯了QAQ：</p>
+<div class="highlight"><pre>error: invalid initialization of non-const reference of type ‘const elem*&amp;’ from an rvalue of type ‘elem*’
+</pre></div>
+
+
+<p>恩...簡單來說這樣好像是被判斷成「一個const的elem指標」的reference，但是reference依舊不是const，所以要這樣解決：</p>
+<div class="highlight"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+</pre></div>
+
+
+<p>這樣top才會被視為一個const的「elem指標的reference」。</p>
+<p>為了避免模糊重點可以把問題簡化成這樣：(<del>就是上面其實可以都不用看的意思</del>)</p>
+<div class="highlight"><pre><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+<span class="kt">int</span><span class="o">*</span> <span class="nf">func2</span><span class="p">();</span>
+
+<span class="n">func1</span><span class="p">(</span><span class="n">func2</span><span class="p">());</span>
+<span class="c1">//error: invalid initialization of non-const reference of type ‘int*&amp;’ from an rvalue of type ‘int*’</span>
+
+
+<span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+<span class="kt">int</span><span class="o">*</span> <span class="nf">func2</span><span class="p">();</span>
+
+<span class="n">func1</span><span class="p">(</span><span class="n">func2</span><span class="p">());</span>
+<span class="c1">//error: invalid initialization of non-const reference of type ‘const int*&amp;’ from an rvalue of type ‘int*’</span>
+
+
+<span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+<span class="kt">int</span><span class="o">*</span> <span class="nf">func2</span><span class="p">();</span>
+
+<span class="n">func1</span><span class="p">(</span><span class="n">func2</span><span class="p">());</span>
+<span class="c1">//work!!</span>
+</pre></div>
+
+
+<p>終於成功了QAQ，不過這些好像大部份是常識(?)，接著有一個神祕解法:</p>
+<div class="highlight"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="o">&amp;&amp;</span><span class="n">top</span><span class="p">);</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p>C++11的用法，再加一個&amp;變成reference的reference(怎麼感覺比pointer to pointer邪門不少...)，這樣就能傳rvalue了</p>
+<p>心得：</p>
+<ol>
+<li>*跟&amp;混用還是挺有趣而且挺方便的...可是要注意很多lvalue跟rvalue的事情Orz</li>
+<li>C++好難阿</li>
+</ol>
+<p>以上感謝FB上的各路大神出手相助XD</p>	
 						</div>
 					</div>
 					<div style="clear: both;">&nbsp;</div>
@@ -44,7 +137,7 @@ Released   : 20100928
 				<div id="sidebar">
 					<div id="logo">
 						<h1><a href="">源夢</a></h1>
-<p>在CS與IE之間遊蕩卻好像啥都不會的小渣渣(・ω・)</p>					</div>
+<p>沒有人就沒有電腦哪(`・ω・´)</p>					</div>
 					<div id="menu">
 						<ul>
 							<li ><a href="/index.html">Home</a></li>
@@ -55,7 +148,7 @@ Released   : 20100928
 						<li>
 							<h2>Catégories</h2>
 							<ul>
-								 <li ><a href="/category/review.html">Review</a></li>
+								 <li ><a href="/category/yu-yan.html">語言</a></li>
 							</ul>
 						</li>
 						<li>
@@ -77,6 +170,7 @@ Released   : 20100928
 						<li>
 						        <h2>Tags</h2>
 						        <ul>
+                                                                <li><a href="/tag/c.html">C++</a></li>
 						        </ul>
 						</li>
 						

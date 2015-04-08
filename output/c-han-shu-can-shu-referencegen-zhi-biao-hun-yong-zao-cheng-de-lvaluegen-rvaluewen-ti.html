@@ -15,7 +15,7 @@ Released   : 20100928
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>源夢</title>
+<title>C++ 函數參數Reference跟指標混用造成的lvalue跟rvalue問題</title>
 <link href="/theme/css/style.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="/" type="application/atom+xml" rel="alternate" title="源夢 ATOM Feed" />
 </head>
@@ -24,14 +24,13 @@ Released   : 20100928
 	<div id="page">
 		<div id="page-bgtop">
 			<div id="page-bgbtm">
- 
-        
-				<div id="content">
+    
+                        	<div id="content">
 					<div class="post">
-						<h2 class="title"><a href="/c-han-shu-can-shu-referencegen-zhi-biao-hun-yong-zao-cheng-de-lvaluegen-rvaluewen-ti.html">C++ 函數參數Reference跟指標混用造成的lvalue跟rvalue問題</a></h2>
-						<p class="meta"><span class="date">Le  </span><span class="posted">Par <a href="#">Zekt</a></span><span>&nbsp; | Catégorie : <a href="/category/yu-yan.html">語言</a></span></p>
+						<h2 class="title"><a href="c-han-shu-can-shu-referencegen-zhi-biao-hun-yong-zao-cheng-de-lvaluegen-rvaluewen-ti.html">C++ 函數參數Reference跟指標混用造成的lvalue跟rvalue問題</a></h2>
+						<p class="meta"><span class="date">Le Wed 08 April 2015 </span><span class="posted">Par <a href="#">Zekt</a></span><span>&nbsp; | Catégorie : <a href="/category/yu-yan.html">語言</a></span></p>
 					<p class="meta">Tags : <span><a href="/tag/c.html">C++</a> / </span>
-</p>
+</p>	
 						<div style="clear: both;">&nbsp;</div>
 						<div class="entry">
 						 <p>某次在寫stack題時出現的code，因為題目中pop stack A時必定會push一元素進stack A，然後我很無聊的想把pop跟push一起解決因此出現下面的code:</p>
@@ -132,15 +131,17 @@ Released   : 20100928
 <p>以上感謝FB上的各路大神出手相助XD</p>	
 						</div>
 					</div>
+			      
 					<div style="clear: both;">&nbsp;</div>
 				</div>
+				<!-- end #content -->
 				<div id="sidebar">
 					<div id="logo">
 						<h1><a href="">源夢</a></h1>
 <p>沒有人就沒有電腦哪(`・ω・´)</p>					</div>
 					<div id="menu">
 						<ul>
-							<li class="current_page_item"><a href="/index.html">Home</a></li>
+							<li ><a href="/index.html">Home</a></li>
 							<li ><a href="/archives.html">Archives</a></li>
 						</ul>
 					</div>
@@ -148,7 +149,7 @@ Released   : 20100928
 						<li>
 							<h2>Catégories</h2>
 							<ul>
-								 <li ><a href="/category/yu-yan.html">語言</a></li>
+								 <li class="active"><a href="/category/yu-yan.html">語言</a></li>
 							</ul>
 						</li>
 						<li>

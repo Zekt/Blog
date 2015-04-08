@@ -82,14 +82,14 @@ a:hover {
 #logo h1, #logo p {
 	margin: 0;
 	padding: 0;
-	letter-spacing: -2px;
 	text-align: center;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #logo h1 {
-	margin: 0px 0px -20px 0px;
+	margin: 0px 0px 0px 0px;
 	padding: 20px 0px 0px 0px;
+	letter-spacing: -2px;
 	font-size: 50px;
 	color: #4D8D99;
 }
@@ -101,8 +101,8 @@ a:hover {
 #logo p {
 	margin: 0px;
 	padding: 0px;
-	font-size: 26px;
-} 
+	font-size: 16px;
+}
 
 #logo a {
 	border: none;
