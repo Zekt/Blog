@@ -74,16 +74,14 @@
 
 
 <p>這時就噴錯了，登登！</p>
-<div class="highlight"><pre>error: invalid initialization of non-const reference of type ‘elem*&amp;’ from an rvalue of type ‘elem*’
+<div class="highlight"><pre><span class="c1">//error: invalid initialization of non-const reference of type ‘elem*&amp;’ from an rvalue of type ‘elem*’</span>
 </pre></div>
 
 
 <p>阿，原來是call by reference時不能丟rvalue的reference當parameter，因為這樣rvalue的值可能會被直接變動
 這好像是常識...Orz
 那應該有兩個解決辦法：</p>
-<ol>
-<li>
-<p>分開寫就好(不要罵我髒話(つд⊂))，不過只是因為這個狀況函數其實不需要回傳東西，其他狀況的話應該要存到暫時變數：</p>
+<p>1.分開寫就好(不要罵我髒話(つд⊂))，不過只是因為這個狀況函數其實不需要回傳東西，其他狀況的話應該要存到暫時變數：</p>
 <div class="highlight"><pre><span class="n">pop</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
 <span class="n">push</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">A</span><span class="p">);</span>
 <span class="c1">//work!!</span>
@@ -94,9 +92,7 @@
 </pre></div>
 
 
-</li>
-<li>
-<p>宣告時加const使reference不能被變動:</p>
+<p>2.宣告時加const使reference不能被變動:</p>
 <div class="highlight"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="n">elem</span><span class="o">*</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
 
 <span class="p">...</span>
@@ -105,10 +101,8 @@
 </pre></div>
 
 
-</li>
-</ol>
 <p>又噴錯了QAQ：</p>
-<div class="highlight"><pre>error: invalid initialization of non-const reference of type ‘const elem*&amp;’ from an rvalue of type ‘elem*’
+<div class="highlight"><pre><span class="c1">//error: invalid initialization of non-const reference of type ‘const elem*&amp;’ from an rvalue of type ‘elem*’</span>
 </pre></div>
 
 
@@ -153,7 +147,7 @@
 <li>*跟&amp;混用還是挺有趣而且挺方便的...可是要注意很多lvalue跟rvalue的事情Orz</li>
 <li>C++好難阿</li>
 </ol>
-<p>以上感謝FB上的各路大神出手相助&lt;(<em> </em>)&gt;
+<p>以上感謝FB上的各路大神出手相助&lt;(_ _)&gt;
 這種寫法很不可取吧XD</p>
             <aside>
             <hr/>
