@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Zekt'
 SITENAME = '源夢'
 SITESUBTITLE = '沒有人就沒有電腦哪(`・ω・´)'
-SITEURL = ''
+SITEURL = 'https://Zekt.github.io/Blog'
 THEME = '/home/vik/Projects/Blog/themes/elegant'
 
 PATH = ''
@@ -32,5 +32,6 @@ SOCIAL = (('Facebook', 'https://www.facebook.com/victorreznovisalive'),
 
 DEFAULT_PAGINATION = 10
 
+DISQUS_SITENAME = 'zekt'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
