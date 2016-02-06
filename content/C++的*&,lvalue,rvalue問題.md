@@ -19,11 +19,8 @@ Tags: C++
 	:::C++
 	push(n, pop(A));
 
-這時就噴錯了，登登！
-
-	:::C++
-	//error: invalid initialization of non-const reference of type ‘elem*&’ from an rvalue of type ‘elem*’
-
+這時就噴錯了，登登！  
+`error: invalid initialization of non-const reference of type ‘elem*&’ from an rvalue of type ‘elem*’`   
 阿，原來是call by reference時不能丟rvalue的reference當parameter，因為這樣rvalue的值可能會被直接變動
 這好像是常識...Orz
 那應該有兩個解決辦法：
@@ -33,7 +30,7 @@ Tags: C++
 	:::C++
 	pop(A);
 	push(n, A);
-	//work!!
+	//it worked!!
 	
    	elem* tmp = pop(A);
 	push(n, tmp);
@@ -48,12 +45,9 @@ Tags: C++
 		
 	push(pop(A), B);
 
-又噴錯了QAQ：
-
-	:::C++
-	//error: invalid initialization of non-const reference of type ‘const elem*&’ from an rvalue of type ‘elem*’
-
-恩...簡單來說這樣好像是被判斷成「一個const的elem指標」的reference，但是reference依舊不是const，所以要這樣解決：
+又噴錯了QAQ：  
+`error: invalid initialization of non-const reference of type ‘const elem*&’ from an rvalue of type ‘elem*’`
+恩...簡單來說這樣好像是「一個const的elem指標」的reference，但是reference依舊不是const，所以要這樣解決：
 
 	:::C++
 	void push(int n, elem* const &top);
@@ -83,7 +77,7 @@ Tags: C++
 	func1(func2());
 	//work!!
 
-終於成功了QAQ，不過這些好像大部份是常識(?)，接著有一個神祕解法:
+終於成功了QAQ，不過這些好像大部份是常識(?)，接著有一個比較簡潔的解法:
 
 	:::C++
 	void push(int n, elem* &&top);
@@ -93,7 +87,7 @@ C++11的用法，再加一個&變成reference的reference(怎麼感覺比pointer
 
 心得：
 
-1.  *跟&混用還是挺有趣而且挺方便的...可是要注意很多lvalue跟rvalue的事情Orz
+1.  *跟&混用要注意很多lvalue跟rvalue的事情Orz
 2.  C++好難阿
 
 以上感謝FB上的各路大神出手相助<(\_ \_)>

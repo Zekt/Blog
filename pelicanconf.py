@@ -5,8 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = 'Zekt'
 SITENAME = '源夢'
 SITESUBTITLE = '沒有人就沒有電腦哪(`・ω・´)'
-SITEURL = 'zekt.github.io/Blog'
-THEME = '/home/vik/Projects/Blog/themes/elegant'
+SITEURL = ''
+THEME = './themes/blueidea'
 
 PATH = ''
 
