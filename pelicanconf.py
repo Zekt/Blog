@@ -3,13 +3,12 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Zekt'
-SITENAME = '源夢'
-SITESUBTITLE = '沒有人就沒有電腦哪(`・ω・´)'
+SITENAME = 'Zekt\'s Blog'
+SITESUBTITLE = 'Source of Love and Hatred.'
 SITEURL = ''
 THEME = './themes/blueidea'
 
 PATH = ''
-
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'zh'
@@ -40,6 +39,6 @@ DISQUS_SITENAME = 'zekt'
 
 # Elegant
 LANDING_PAGE_ABOUT = {
-        'title': '在CS與IE中徘徊的弱弱大學生',
-        'details': '<p>你好，我是林子期，目前就讀臺大資管系一年級。興趣是寫程式跟看書，喜歡電腦科學、資訊工程，有點愚昧但喜歡思考，想努力的滿足自己的無知。</p><p>高中時打過一些演算法類競賽，略懂一些C/C++和演算法與資料結構，會一點點Python及網頁前後端，希望每天都能回答自己更多問題，期待能對社會上的不合理有更深層的省思，夢想為自己與他人找到目標。</p>'
+        'title': '在學科間徘徊的弱弱大學生',
+        'details': '我是林子期，臺灣大學資管系二年級的學生，對開源與自由軟體、電腦科學、哲學、社會科學有興趣，希望能用知識與技術的力量，尋找不幸與不安的解答。'
         }

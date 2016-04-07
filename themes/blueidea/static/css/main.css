@@ -13,7 +13,7 @@
 @import url("reset.css");
 @import url("pygment.css");
 @import url("typogrify.css");
-@import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200);
 
 /***** Global *****/
 /* Body */
@@ -21,11 +21,15 @@ body {
     background: #f2f3f3;
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "source-han-sans-traditional", 'Noto Sans CJK TC', 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.429;
     margin: 0;
     padding: 0;
     text-align: left;
+}
+
+pre {
+	font-family: 'Hack';
 }
 
 /* Headings */
@@ -329,6 +333,10 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	padding-bottom: 10px;
 }
 
+#extras > div {
+	margin: 10px;
+}
+
 #extras ul {list-style: none; margin: 0;}
 /*#extras li {border-bottom: 1px solid #fff;}*/
 #extras li {margin-top: 0;}
@@ -339,12 +347,16 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	padding: 0 3px;
 }
 
+#extras a {
+	border-radius: .3em;
+}
+
 #extras a:link, #extras a:visited {
 	color: #fff;
 	display: block;
 	/*border-bottom: 1px solid #F4E3E3;*/
 	text-decoration: none;
-	padding: .3em .25em;
+	padding: .3em .55555em;
 }
 
 #extras a:hover, #extras a:active {background: #008db8; color: #fff;}
@@ -352,10 +364,10 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	/* Blogroll */
 	#extras .blogroll {
 		float: left;
-		width: 615px;
+		width: 575px;
 	}
 	
-	#extras .blogroll li {float: left; margin: 0 20px 0 0; width: 185px;}
+	#extras .blogroll li {float: left; margin: 0 0 20px 0; width: 185px;}
 	
 	/* Social */
 	#extras .social {
@@ -365,8 +377,8 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	
 	#extras div[class='social'] a {
 		background-repeat: no-repeat;
-		background-position: 3px 6px;
-		padding-left: 25px;
+		background-position: 6px 6px;
+		padding-left: 30px;
 	}
 	
 		/* Icons */
