@@ -3,7 +3,8 @@
 <head>
         <meta charset="utf-8" />
         <title>Zekt's Blog - C++</title>
-        <link rel="stylesheet" href="https://zekt.github.io/Blog/theme/css/main.css" />
+        <link rel="stylesheet" href="/theme/css/main.css" />
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.019/css/hack.min.css">
 
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,31 +13,32 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="https://zekt.github.io/Blog/">Zekt's Blog  <strong>Source of Love and Hatred.</strong></a></h1>
+                <h1><a href="/">Zekt's Blog  <strong>Source of Love and Hatred.</strong></a></h1>
                 <nav><ul>
-                    <li><a href="https://zekt.github.io/Blog/category/yu-yan.html">語言</a></li>
+                    <li><a href="/category/guan-dian.html">觀點</a></li>
+                    <li><a href="/category/yu-yan.html">語言</a></li>
                 </ul>
                 </nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://zekt.github.io/Blog/c-han-shu-hui-chuan-zhi-zuo-wei-reference-can-shu-zao-cheng-de-rvalue-wen-ti.html">C++ 函數回傳值作為 Reference 參數造成的 rvalue 問題</a></h1>
+                    <h1 class="entry-title"><a href="/c-han-shu-hui-chuan-zhi-zuo-wei-reference-can-shu-zao-cheng-de-rvalue-wen-ti.html">C++ 函數回傳值作為 Reference 參數造成的 rvalue 問題</a></h1>
 <footer class="post-info">
         <span>Wed 08 April 2015</span>
-<span>| tags: <a href="https://zekt.github.io/Blog/tag/c.html">C++</a></span>
+<span>| tags: <a href="/tag/c.html">C++</a></span>
 </footer><!-- /.post-info --><p>某次在寫 stack 題時出現的 code，因為題目中 pop stack A 時必定會 push 一元素進 stack A，然後我很無聊的想把 pop 跟 push 一起解決因此出現下面的 code:</p>
 <p>宣告的部份，一個 stack 由一堆 elem 構成，
 用最上面的 elem 作為 top 代表一個 stack，
 因為 top 會變動故 Call by reference。
 因為題目有如上性質令 pop 時會回傳新的 top。</p>
-<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+<div class="highlight"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
 <span class="n">elem</span><span class="o">*</span> <span class="nf">pop</span><span class="p">(</span><span class="n">elem</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
 </pre></div>
 
 
 <p>依據題目性質，stack A pop 時直接將新元素 push 進 stack A:</p>
-<div class="highlight"><pre><span></span><span class="n">push</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">pop</span><span class="p">(</span><span class="n">A</span><span class="p">));</span>
+<div class="highlight"><pre><span class="n">push</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">pop</span><span class="p">(</span><span class="n">A</span><span class="p">));</span>
 </pre></div>
 
 
@@ -44,7 +46,7 @@
 <code>error: invalid initialization of non-const reference of type ‘elem*&amp;’ from an rvalue of type ‘elem*’</code><br />
 因為 call by reference 時不能丟 rvalue 的 reference 當 parameter，因為這樣 rvalue 的值可能會被直接變動，所以 C++ 標準禁止這麼做，這時有兩個解決辦法：</p>
 <p>1.分開寫，這次這個函數剛好不需要回傳值，其他狀況的話應該要將回傳值先存到暫時變數：</p>
-<div class="highlight"><pre><span></span><span class="n">pop</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+<div class="highlight"><pre><span class="n">pop</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
 <span class="n">push</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">A</span><span class="p">);</span>
 <span class="c1">//it works!!</span>
 
@@ -55,7 +57,7 @@
 
 
 <p>2.宣告時加 const 使 reference 不能被變動:</p>
-<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="n">elem</span><span class="o">*</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+<div class="highlight"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="n">elem</span><span class="o">*</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
 
 <span class="p">...</span>
 
@@ -66,13 +68,13 @@
 <p>又噴錯了 QAQ：<br />
 <code>error: invalid initialization of non-const reference of type ‘const elem*&amp;’ from an rvalue of type ‘elem*’</code>
 因為這是「一個const的elem指標」的reference，但是reference依舊不是const，所以要這樣解決：</p>
-<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+<div class="highlight"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="k">const</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
 </pre></div>
 
 
 <p>這樣 top 才會被視為一個 const 的「elem 指標的 reference」。</p>
 <p>為了避免模糊重點可以把問題簡化成這樣：(<del>就是上面其實可以都不用看的意思</del>)</p>
-<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+<div class="highlight"><pre><span class="kt">void</span> <span class="nf">func1</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
 <span class="kt">int</span><span class="o">*</span> <span class="nf">func2</span><span class="p">();</span>
 
 <span class="n">func1</span><span class="p">(</span><span class="n">func2</span><span class="p">());</span>
@@ -95,12 +97,12 @@
 
 
 <p>終於成功了 QAQ，不過這些好像大部份是常識(?)，接著有一個比較簡潔的解法:</p>
-<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="o">&amp;&amp;</span><span class="n">top</span><span class="p">);</span>
+<div class="highlight"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">elem</span><span class="o">*</span> <span class="o">&amp;&amp;</span><span class="n">top</span><span class="p">);</span>
 <span class="p">...</span>
 </pre></div>
 
 
-<p>C++11 中兩個 &amp; 即為 reference 的 reference，這樣就能傳 rvalue 了。</p><p><a href="https://zekt.github.io/Blog/c-han-shu-hui-chuan-zhi-zuo-wei-reference-can-shu-zao-cheng-de-rvalue-wen-ti.html#disqus_thread">comments</a></p>                </article>
+<p>C++11 中兩個 &amp; 即為 reference 的 reference，這樣就能傳 rvalue 了。</p><p><a href="/c-han-shu-hui-chuan-zhi-zuo-wei-reference-can-shu-zao-cheng-de-rvalue-wen-ti.html#disqus_thread">comments</a></p>                </article>
 <p class="paginator">
     Page 1 / 1
 </p>
