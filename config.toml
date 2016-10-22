@@ -2,3 +2,4 @@ baseurl = "Zekt.github.io/Blog/"
 languageCode = "en-us"
 title = "Code Epic"
 PygmentsCodeFences = true
+theme = "base16"
