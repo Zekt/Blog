@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Zekt'
 SITENAME = 'Zekt\'s Blog'
 SITESUBTITLE = 'Source of Love and Hatred.'
-SITEURL = ''
+SITEURL = 'https://zekt.github.io/Blog/'
 THEME = './themes/blueidea'
 
 PATH = ''
