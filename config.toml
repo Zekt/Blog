@@ -1,4 +1,4 @@
-baseurl = "Zekt.github.io/Blog/"
+baseurl = "https://Zekt.github.io/Blog/"
 languageCode = "en-us"
 title = "Code Epic"
 PygmentsCodeFences = true
