@@ -1,4 +1,4 @@
-baseurl = "https://viktorl.in/Blog"
+baseurl = "https://viktorl.in/Blog/"
 languageCode = "en-us"
 title = "Code Epic"
 PygmentsCodeFences = true
