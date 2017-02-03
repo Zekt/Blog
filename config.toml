@@ -1,6 +1,6 @@
 # Site settings
 # baseurl = "https://viktorl.in/Blog/"
-baseurl = "http://localhost:8000/"
+baseurl = "https://viktorl.in/Blog/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "en"
 title = "SIGSTOP"
