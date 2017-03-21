@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on SIGSTOP</title>
-    <link>https://viktorl.in/Blog/post/</link>
-    <description>Recent content in Posts on SIGSTOP</description>
+    <title>網路治理 on SIGSTOP</title>
+    <link>https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF%E6%B2%BB%E7%90%86/</link>
+    <description>Recent content in 網路治理 on SIGSTOP</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 22 Mar 2017 00:26:00 +0800</lastBuildDate>
-    <atom:link href="https://viktorl.in/Blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF%E6%B2%BB%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>馬尼拉原則</title>
