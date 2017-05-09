@@ -11,5 +11,17 @@
 	<atom:link href="https://viktorl.in/Blog/about/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>About</title>
+      <link>https://viktorl.in/Blog/about/</link>
+      <pubDate>Thu, 02 Feb 2017 16:50:37 +0200</pubDate>
+      
+      <guid>https://viktorl.in/Blog/about/</guid>
+      <description>A student in Philosophy Department in National Taiwan University, interested in programming and computer science.
+Those three Greek words in the title are, respectively, eros, logos, and ego.
+λ in the title refers to lambda expression in lambda calculus.
+You can check out my social links below.</description>
+    </item>
+    
   </channel>
 </rss>
