@@ -33,12 +33,6 @@
   </url>
   
   <url>
-    <loc>https://viktorl.in/Blog/</loc>
-    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://viktorl.in/Blog/tags/sitcon/</loc>
     <lastmod>2017-03-22T02:10:00+08:00</lastmod>
     <priority>0</priority>
@@ -46,6 +40,12 @@
   
   <url>
     <loc>https://viktorl.in/Blog/tags/</loc>
+    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/</loc>
     <lastmod>2017-03-22T02:10:00+08:00</lastmod>
     <priority>0</priority>
   </url>
