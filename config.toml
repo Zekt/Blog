@@ -3,14 +3,14 @@
 baseurl = "https://viktorl.in/Blog/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "en"
-title = "λ ἔρως → λέγω → εγώ"
+title = "λ ἔρως → λόγος → εγώ"
 theme = "hugo-theme-cactus-plus"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-91271148-1"
 PygmentsCodeFences = true
 
 [params]
-	name = "λ ἔρως → λέγω → εγώ"
+	name = "λ ἔρως → λόγος → εγώ"
 	description = "A Philosophy Student, loves Computer Science."
 	bio = "A Philosophy student, loves Computer Science."
 	# Enter optionally your twitter account
@@ -58,7 +58,7 @@ PygmentsCodeFences = true
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
-	aboutAuthor = "I am so interesting."
+	aboutAuthor = "Do you love me?"
 	tweet = ""
 	share = ""
 	# 404 page
