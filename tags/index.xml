@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on SIGSTOP</title>
+    <link>https://viktorl.in/Blog/tags/</link>
+    <description>Recent content in Tags on SIGSTOP</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 22 Mar 2017 02:10:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://viktorl.in/Blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sitcon</title>
+      <link>https://viktorl.in/Blog/tags/sitcon/</link>
+      <pubDate>Wed, 22 Mar 2017 02:10:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/tags/sitcon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>網路</title>
+      <link>https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF/</link>
+      <pubDate>Wed, 22 Mar 2017 02:10:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>網路治理</title>
+      <link>https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF%E6%B2%BB%E7%90%86/</link>
+      <pubDate>Wed, 22 Mar 2017 02:10:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF%E6%B2%BB%E7%90%86/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

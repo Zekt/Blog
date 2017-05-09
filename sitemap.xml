@@ -2,28 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://viktorl.in/Blog/</loc>
+    <loc>https://viktorl.in/Blog/post/rfc/</loc>
     <lastmod>2017-03-22T02:10:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://viktorl.in/Blog/post/RFC/</loc>
-    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://viktorl.in/Blog/post/ManilaPrinciples/</loc>
+    <loc>https://viktorl.in/Blog/post/manilaprinciples/</loc>
     <lastmod>2017-03-22T00:26:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://viktorl.in/Blog/post/TransReport/</loc>
+    <loc>https://viktorl.in/Blog/post/transreport/</loc>
     <lastmod>2017-03-20T20:45:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://viktorl.in/Blog/about/</loc>
     <lastmod>2017-02-02T16:50:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/post/</loc>
+    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/</loc>
+    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/tags/sitcon/</loc>
+    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/tags/</loc>
+    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF/</loc>
+    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF%E6%B2%BB%E7%90%86/</loc>
+    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
