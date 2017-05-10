@@ -6,4 +6,4 @@ git checkout gh-pages
 echo -n "commit message:"
 read cms
 git add public && git stash && rm -rf ./* && git stash pop && mv public/* ./ && rm -r public && git add -A && git commit -m "$cms"
-
+echo "changes committed to gh-pages branch, push to deploy."
