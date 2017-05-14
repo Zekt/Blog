@@ -7,6 +7,11 @@
   </url>
   
   <url>
+    <loc>https://viktorl.in/Blog/post/opentextbook/</loc>
+    <lastmod>2017-04-25T23:42:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://viktorl.in/Blog/post/rfc/</loc>
     <lastmod>2017-03-22T02:10:00+08:00</lastmod>
   </url>
@@ -66,6 +71,12 @@
   </url>
   
   <url>
+    <loc>https://viktorl.in/Blog/tags/%E5%AD%B8%E6%A0%A1/</loc>
+    <lastmod>2017-04-25T23:42:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://viktorl.in/Blog/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2017-05-13T17:16:00+08:00</lastmod>
     <priority>0</priority>
@@ -86,6 +97,12 @@
   <url>
     <loc>https://viktorl.in/Blog/tags/%E7%B7%A8%E8%BC%AF%E5%99%A8/</loc>
     <lastmod>2017-05-13T17:16:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/tags/%E9%96%8B%E6%94%BE/</loc>
+    <lastmod>2017-04-25T23:42:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
