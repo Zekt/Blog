@@ -27,19 +27,6 @@ RFC 2324 - Hyper Text Coffee Pot Control Protocol (HTCPCP/1.</description>
     </item>
     
     <item>
-      <title>馬尼拉原則</title>
-      <link>https://viktorl.in/Blog/post/manilaprinciples/</link>
-      <pubDate>Wed, 22 Mar 2017 00:26:00 +0800</pubDate>
-      
-      <guid>https://viktorl.in/Blog/post/manilaprinciples/</guid>
-      <description>馬尼拉原則是由 EFF （電子前哨基金會）等非政府組織共同倡議的一項用於規範中間人的法律責任的原則，至目前為止也得到了國際間一百多個非政府組織的聯署支持。由於我們現今接取網路都必須透過 ISP、社群網路或搜尋引擎等服務提供業者（中間人），因此對於這些業者的法律規範會大幅地影響人們的言論自由與隱私權等各項權利。
-馬尼拉原則涉及了中間人與使用者、中間人與政府、以及中間人對第三方內容的義務與法律責任，並對相關法律責任做了原則性的規範，期望以這樣的框架能保障網路使用者的基本人權與利於創新的環境。
-文件內的條文都十分簡短且易於閱讀，推薦大家也能試著將它讀過，也許會質疑這份原則的條文都是顯而易見的道理，為什麼需要特別條列？這或許提醒了我們，網路並不如想像中的自由，這些原則也從來都不被視為理所當然。
-參考資料： 馬尼拉原則網站 
-馬尼拉原則繁體中文版 GitBook</description>
-    </item>
-    
-    <item>
       <title>透明度報告</title>
       <link>https://viktorl.in/Blog/post/transreport/</link>
       <pubDate>Mon, 20 Mar 2017 20:45:00 +0800</pubDate>
@@ -85,6 +72,40 @@ You can check out my social links below.</description>
 我只是需要有人聽我說。
 最後我想說，對不起，這段時間一直打擾你。我不知道對你來說我是什麼樣的人，但是很感謝你願意傾聽我的無理。
 祝一切安好。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://viktorl.in/Blog/post/manilaprinciples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://viktorl.in/Blog/post/manilaprinciples/</guid>
+      <description>+++
+title = &amp;ldquo;馬尼拉原則&amp;rdquo;
+date = &amp;ldquo;2017-03-22T00:26:00+08:00&amp;rdquo;
+tags = [&amp;ldquo;SITCON&amp;rdquo;, &amp;ldquo;網路&amp;rdquo;, &amp;ldquo;網路治理&amp;rdquo;]
++++
+馬尼拉原則是由 EFF （電子前哨基金會）等非政府組織共同倡議的一項用於規範中間人的法律責任的原則，至目前為止也得到了國際間一百多個非政府組織的聯署支持。由於我們現今接取網路都必須透過 ISP、社群網路或搜尋引擎等服務提供業者（中間人），因此對於這些業者的法律規範會大幅地影響人們的言論自由與隱私權等各項權利。
+馬尼拉原則涉及了中間人與使用者、中間人與政府、以及中間人對第三方內容的義務與法律責任，並對相關法律責任做了原則性的規範，期望以這樣的框架能保障網路使用者的基本人權與利於創新的環境。
+文件內的條文都十分簡短且易於閱讀，推薦大家也能試著將它讀過，也許會質疑這份原則的條文都是顯而易見的道理，為什麼需要特別條列？這或許提醒了我們，網路並不如想像中的自由，這些原則也從來都不被視為理所當然。
+參考資料： 馬尼拉原則網站
+馬尼拉原則繁體中文版 GitBook</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://viktorl.in/Blog/post/nativeeditorwithmarkdownsupport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://viktorl.in/Blog/post/nativeeditorwithmarkdownsupport/</guid>
+      <description>補充        +++
+title = &amp;ldquo;支援 Markdown 的原生文章編輯器 (Un)colored&amp;rdquo;
+date = &amp;ldquo;2017-05-13T17:16:00+08:00&amp;rdquo;
+tags = [&amp;ldquo;工具&amp;rdquo;, &amp;ldquo;編輯器&amp;rdquo;]
++++
+我一直不太喜歡兩欄式的 Markdown 編輯器，Hackpad 吸引人的地方並不是只有 Markdown shortcut，而是他的編輯界面依然所見即所得，Markdown 還是比較適合用在不太需要在意文件樣式的場合（例如程式文件），反而對寫文章的人來說很不友善，要一直想著被 render 出來的文章會長什麼樣子，想改文字格式還得一直改原始碼。
+ 我一直不太理解 web based 支援 Markdown 的編輯器為什麼都不能簡單又所見及所得（like Hackpad），不是超多功能就是一定要寫 Markdown&amp;hellip;或是像 SimpleMDE 這樣醜醜的折衷，大概剩 Paper 處理得滿漂亮的。
+很多靜態部落格系統也愛用 Markdown，我覺得 Markdown 還是作為網路上交換的格式就好了，寫文章或做筆記還只能盯著純文字實在不是很友善呀。 這部分反而是很多人做了不錯的 Native app，最近找到 (Un)colored 竟然能所見即所得的編輯跟匯出 Markdown，界面也超棒，真的是夢寐以求的編輯器，可是還在 beta QQ，大家快來捐款支持一下阿。這篇也是用 (Un)colored 編輯然後匯出成 Markdown，比以前得用 vim 寫文章友善多啦。比較可惜的是作者似乎沒有把最新進度放到 GitHub 上，只能先默默捐款支持。</description>
     </item>
     
   </channel>
