@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://viktorl.in/Blog/post/nativeeditorwithmarkdownsupport/</loc>
+    <lastmod>2017-05-13T17:16:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://viktorl.in/Blog/post/rfc/</loc>
     <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/post/manilaprinciples/</loc>
+    <lastmod>2017-03-22T00:26:00+08:00</lastmod>
   </url>
   
   <url>
@@ -27,21 +37,13 @@
   </url>
   
   <url>
-    <loc>https://viktorl.in/Blog/post/manilaprinciples/</loc>
-  </url>
-  
-  <url>
-    <loc>https://viktorl.in/Blog/post/nativeeditorwithmarkdownsupport/</loc>
-  </url>
-  
-  <url>
     <loc>https://viktorl.in/Blog/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://viktorl.in/Blog/post/</loc>
-    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+    <lastmod>2017-05-13T17:16:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -59,7 +61,13 @@
   
   <url>
     <loc>https://viktorl.in/Blog/</loc>
-    <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+    <lastmod>2017-05-13T17:16:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2017-05-13T17:16:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -72,6 +80,12 @@
   <url>
     <loc>https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF%E6%B2%BB%E7%90%86/</loc>
     <lastmod>2017-03-22T02:10:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://viktorl.in/Blog/tags/%E7%B7%A8%E8%BC%AF%E5%99%A8/</loc>
+    <lastmod>2017-05-13T17:16:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
