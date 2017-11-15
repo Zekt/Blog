@@ -1,5 +1,5 @@
 +++
-title = "支援 Markdown 的 Native 文章編輯器 (Un)colored"
+title = "支援 Markdown 的原生文章編輯器 (Un)colored"
 date = "2017-05-13T17:16:00+08:00"
 tags = ["工具", "編輯器"]
 +++
