@@ -1,11 +1,9 @@
 +++
-date = "2017-02-02T16:50:37+02:00"
+date = "2017-11-29T16:37:00+08:00"
 title = "About"
 +++
 
-A student studying in Philophy in National Taiwan University, interested in programming and computer science, and topics about open source, hacker culture, etc.  
-Those three Greek words in the blog title are, respectively, eros, logos, and ego.  
-λ in the title refers to lambda expression in lambda calculus.
+A student studying in Philophy in National Taiwan University, interested in functional programming and computer science, and topics about open source, hacker culture, etc.  
 
 ***
 

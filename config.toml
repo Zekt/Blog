@@ -3,14 +3,14 @@
 baseurl = "https://viktorl.in/Blog/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "en"
-title = "λ ἔρως → λόγος → εγώ"
+title = "Literally Programming"
 theme = "hugo-theme-cactus-plus"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-91271148-1"
 PygmentsCodeFences = true
 
 [params]
-	name = "λ ἔρως → λόγος → εγώ"
+	name = "Literally Programming"
 	description = "A Philosophy Student, loves Computer Science."
 	bio = "A Philosophy student, loves Computer Science."
 	# Enter optionally your twitter account
