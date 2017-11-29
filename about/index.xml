@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on λ ἔρως → λόγος → εγώ</title>
+    <title>About on Literally Programming</title>
     <link>https://viktorl.in/Blog/about/</link>
-    <description>Recent content in About on λ ἔρως → λόγος → εγώ</description>
+    <description>Recent content in About on Literally Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Feb 2017 16:50:37 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 29 Nov 2017 16:37:00 +0800</lastBuildDate>
     
 	<atom:link href="https://viktorl.in/Blog/about/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,12 +14,10 @@
     <item>
       <title>About</title>
       <link>https://viktorl.in/Blog/about/</link>
-      <pubDate>Thu, 02 Feb 2017 16:50:37 +0200</pubDate>
+      <pubDate>Wed, 29 Nov 2017 16:37:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/about/</guid>
-      <description>A student studying in Philophy in National Taiwan University, interested in programming and computer science, and topics about open source, hacker culture, etc.
-Those three Greek words in the blog title are, respectively, eros, logos, and ego.
-λ in the title refers to lambda expression in lambda calculus.
+      <description>A student studying in Philophy in National Taiwan University, interested in functional programming and computer science, and topics about open source, hacker culture, etc.
 You can check out my social links below.</description>
     </item>
     
