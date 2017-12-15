@@ -6,10 +6,27 @@
     <description>Recent content in 網路 on Literally Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Mar 2017 02:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Dec 2017 00:30:00 +0800</lastBuildDate>
     
 	<atom:link href="https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>不再中立的網路——寫在美國廢除網路中立性之後</title>
+      <link>https://viktorl.in/Blog/post/netneutrality/</link>
+      <pubDate>Sat, 16 Dec 2017 00:30:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/post/netneutrality/</guid>
+      <description>新聞 美國 FCC 正式廢除了網路中立性原則，什麼是網路中立性呢？簡而言之就是電信商（如我們的中華電信）作為網路的提供者，不該依照我們使用的服務不同（如 Facebook、Google）而有差別待遇。
+不再中立的網路 如果沒有網路中立性原則會發生什麼事呢？這張圖是葡萄牙電信商的收費方式，reddit 上有葡萄牙人說明了，葡萄牙的電信商會提供一個非常少的流量限制，然後讓大家購買這些「組合包」，購買某個組合包的流量只能用在那些服務上。例如買了社交組合包的人可以用 Facebook 但是不能看 Email。
+當然，還是可以選擇無限流量的方案，所以有差嗎？也許有人會問。但反過來說，電信商為什麼會想收費呢？因為這樣能收更多的錢呀。以前的電信商價格，可以是一個大部分人都可以接受、以及與其他（非常少的）電信商競爭下的結果，沒有網路中立性後，電信商可以提供特定方案給覺得有這些服務就好的人，同時讓想要可以跟網路上任何地方溝通的人收更多錢。
+很快會有一個社會，我們可以在 Facebook 上聊天，但是你傳一個重要的活動連結給對方時他跟你說：「抱歉，我沒有流量打開這個連結」
+不再有創意的網路 影響最大的是整個網路的生態，以前網路是（相對）平等的，我們可以架設部落格、放上自己的內容、修改自己的網站，以後放在 Medium 跟 Facebook 上的內容會遠遠勝過個人的網站，因為有很多人看得到那些平臺的內容但是看不到你的部落格。
+越小的服務提供者會越難競爭，想像有一個新興的影音平臺，在很多人只有「影音服務組合包」的情況下，它有可能跟 Netflix 跟 Youtube 競爭嗎？不可能。如果想要跟電信商合作呢？付錢。使用者付錢，服務提供者付錢，網站經營者付錢，電信商大勝利。
+這不是危言聳聽，在 2014 年，Netflix 早就跟美國電信商吵過架了，因為在假日的 Netflix 流量非常高，電信商就把頭腦動到 Netflix 手上——他們針對 Netflix 限速，使用者看 Netflix 的速度最低被降到了 1Mbps ，目的當然也很簡單，要求 Netflix 付錢。
+在美國 FCC 廢除網路中立性之後 我們可以怎麼做呢？我改天再寫（懶得寫），只是希望臺灣的人可以多多注意這個議題，不要讓一樣的事情發生在臺灣。雖然網路不分國界，發生在美國就足以影響全世界了。
+Battle for the net 網站 裡面有許多能夠抗爭跟宣傳議題的方法。</description>
+    </item>
     
     <item>
       <title>RFC(Request for Comments)</title>
