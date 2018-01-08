@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Literally Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Mar 2017 02:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jan 2018 07:03:00 +0800</lastBuildDate>
     
 	<atom:link href="https://viktorl.in/Blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>34c3</title>
+      <link>https://viktorl.in/Blog/tags/34c3/</link>
+      <pubDate>Tue, 09 Jan 2018 07:03:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/tags/34c3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Sitcon</title>
@@ -84,11 +93,29 @@
     </item>
     
     <item>
+      <title>自由軟體</title>
+      <link>https://viktorl.in/Blog/tags/%E8%87%AA%E7%94%B1%E8%BB%9F%E9%AB%94/</link>
+      <pubDate>Tue, 09 Jan 2018 07:03:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/tags/%E8%87%AA%E7%94%B1%E8%BB%9F%E9%AB%94/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>開放</title>
       <link>https://viktorl.in/Blog/tags/%E9%96%8B%E6%94%BE/</link>
       <pubDate>Tue, 25 Apr 2017 23:42:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/tags/%E9%96%8B%E6%94%BE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>開源</title>
+      <link>https://viktorl.in/Blog/tags/%E9%96%8B%E6%BA%90/</link>
+      <pubDate>Tue, 09 Jan 2018 07:03:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/tags/%E9%96%8B%E6%BA%90/</guid>
       <description></description>
     </item>
     
