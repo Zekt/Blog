@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>遊記 on Literally Programming</title>
+    <link>https://viktorl.in/Blog/tags/%E9%81%8A%E8%A8%98/</link>
+    <description>Recent content in 遊記 on Literally Programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 02 Feb 2018 02:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://viktorl.in/Blog/tags/%E9%81%8A%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>駭客、自由、安那其：在柏林倒下的是思想的高牆</title>
+      <link>https://viktorl.in/Blog/post/34c3/</link>
+      <pubDate>Fri, 02 Feb 2018 02:00:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/post/34c3/</guid>
+      <description>「德國極右派的比例一直都是全歐洲最低，他們經歷過納粹德國、同盟國佔領與冷戰，他們知道 What could possibly go wrong。」從歐洲回來後，我在 g0v 大松遇到一位也</description>
+    </item>
+    
+  </channel>
+</rss>

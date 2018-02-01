@@ -17,13 +17,7 @@
       <pubDate>Wed, 22 Mar 2017 02:10:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/rfc/</guid>
-      <description>RFC(Request for Comments) 是許多工程師都知道的規範，許多大家耳熟能詳的協定與格式如 IP、TCP、UDP、HTTP 等協定都在 RFC 規範中。但可能許多人不知道的是 RFC 的來歷，”Request for Comments”，名字怎麼會這麼特別？
-從名字可以看出， RFC 最早其實不是為了成為標準而被提出的。RFC 最早是在 UCLA 的宿舍裡被完成的，那是連 Internet 都還不存在、只有 Internet 的前身、由四所大學連結而成的 ARPANET 的時代。而這份文件如期名稱，只是尋求他人的意見（Request for Comments）的備忘錄的性質。然而在網路意料之外地瘋狂成長之下，已漸漸形成網路協定的重要規範，RFC 的起草與發佈現今也由網際網路工程任務小組（IETF）負責。
-SITCON 2017 的 Keynote 講者黃勝雄先生，便是 RFC 3743 的作者，也是臺灣第一位發佈 RFC 的作者，RFC 3743 建議了在 IDN(Internationalized Domain Names) 中使用 CJK 字元與管理方法。
-事實上如同它的名字，RFC 其實大多十分易於閱讀，如眾所皆知的 JSON 格式（RFC 7159）讀來就如同任何使用過 JSON 的人所知道的一樣簡單明瞭，RFC 也因此堪稱是網際網路歷史中規範制定的典範。
-參考資料： IETF Request for Comments(RFC) Page 
-黃勝雄先生所發佈的 RFC 3743 
-RFC 2324 - Hyper Text Coffee Pot Control Protocol (HTCPCP/1.</description>
+      <description>RFC(Request for Comments) 是許多工程師都知道的規範，許多大家耳熟能詳的協定與格式如 IP、TCP、UDP、HTTP 等協定都在 RFC 規範中。但可能許多人不知道的是 RFC 的來</description>
     </item>
     
     <item>
@@ -32,11 +26,7 @@ RFC 2324 - Hyper Text Coffee Pot Control Protocol (HTCPCP/1.</description>
       <pubDate>Wed, 22 Mar 2017 00:26:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/manilaprinciples/</guid>
-      <description>馬尼拉原則是由 EFF （電子前哨基金會）等非政府組織共同倡議的一項用於規範中間人的法律責任的原則，至目前為止也得到了國際間一百多個非政府組織的聯署支持。由於我們現今接取網路都必須透過 ISP、社群網路或搜尋引擎等服務提供業者（中間人），因此對於這些業者的法律規範會大幅地影響人們的言論自由與隱私權等各項權利。
-馬尼拉原則涉及了中間人與使用者、中間人與政府、以及中間人對第三方內容的義務與法律責任，並對相關法律責任做了原則性的規範，期望以這樣的框架能保障網路使用者的基本人權與利於創新的環境。
-文件內的條文都十分簡短且易於閱讀，推薦大家也能試著將它讀過，也許會質疑這份原則的條文都是顯而易見的道理，為什麼需要特別條列？這或許提醒了我們，網路並不如想像中的自由，這些原則也從來都不被視為理所當然。
-參考資料： 馬尼拉原則網站
-馬尼拉原則繁體中文版 GitBook</description>
+      <description>馬尼拉原則是由 EFF （電子前哨基金會）等非政府組織共同倡議的一項用於規範中間人的法律責任的原則，至目前為止也得到了國際間一百多個非政府組織的聯署</description>
     </item>
     
     <item>
@@ -45,16 +35,7 @@ RFC 2324 - Hyper Text Coffee Pot Control Protocol (HTCPCP/1.</description>
       <pubDate>Mon, 20 Mar 2017 20:45:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/transreport/</guid>
-      <description>透明度報告指的是由企業所定期公佈給大眾檢視、包含所有來自權力機構（如政府）對於個人資料的各式要求的報告，常見的內容有政府對該公司索取個人資料、移除內容的請求，以及該企業對這些請求的回應情形。尤其在 2013 年的史諾登事件後，越來越多公司開始主動定期發表透明度報告，以博取使用者的信任。
-Gag Order 與 Warrant Canary 然而，有時政府在要求資料時甚至會依法禁止該企業與當事人公佈或發表相關言論（如美國的 Gag Order），因此有些企業會在透明度報告中加上 “Warrant Canary”，Warrant Canary 的做法是在定期公佈的透明度報告中聲明該企業沒有收到禁止相關言論的調查，並在收到這種調查時將 Warrant Canary 拿掉。一些大型網路公司如 Apple、Reddit 都曾在透明度報告中加上 Warrant Canary，但現在都已消失。
-台灣網路透明度報告 SITCON 2017 Keynote 講者之一何明諠先生是《台灣網路透明度報告》的專案經理，由於台灣政府對於網路上的個人資料及隱私權的相關法令十分落後，甚至能在沒有標準流程與相關法令下向企業索取用戶資料，因此台權會希望透過這樣的計劃向大眾呈現政府向網路業者索取與要求移除資料的情形，並督促政府提出標準流程及法令依據，以保障所有網路使用者的基本人權。
-參考資料： 台灣網路透明報告網站 
-台灣網路透明報告報告 PDF 
-EFF 誰挺你（Who Has Your Back）2014 隱私年度報告摘譯
-EFF Who Has Your Back 2015 
-EFF Who Has Your Back 2016 
-《聯合國隱私特別報告員 Joseph A. Cannataci 第一次隱私權報告》
-（A/HRC/31/64｜2016年3月｜第31屆人權理事會｜中、英文）</description>
+      <description>透明度報告指的是由企業所定期公佈給大眾檢視、包含所有來自權力機構（如政府）對於個人資料的各式要求的報告，常見的內容有政府對該公司索取個人資料</description>
     </item>
     
   </channel>

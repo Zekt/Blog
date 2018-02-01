@@ -6,10 +6,19 @@
     <description>Recent content on Literally Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jan 2018 07:03:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Feb 2018 02:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://viktorl.in/Blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>駭客、自由、安那其：在柏林倒下的是思想的高牆</title>
+      <link>https://viktorl.in/Blog/post/34c3/</link>
+      <pubDate>Fri, 02 Feb 2018 02:00:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/post/34c3/</guid>
+      <description>「德國極右派的比例一直都是全歐洲最低，他們經歷過納粹德國、同盟國佔領與冷戰，他們知道 What could possibly go wrong。」從歐洲回來後，我在 g0v 大松遇到一位也</description>
+    </item>
     
     <item>
       <title>慕尼黑政府從 Linux 換回 Windows 的背後，倡議者的視角</title>
@@ -17,10 +26,7 @@
       <pubDate>Tue, 09 Jan 2018 07:03:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/limux/</guid>
-      <description>在 34C3 我到了 FSFE（歐洲自由軟體基金會）的攤位，理所當然的問了一下慕尼黑政府先前究竟為何能夠推動將公部門的系統換成 Linux（LiMux），以及後來為何又換回 Windows。從地球的另一端總是有許多新聞，其中也有許多猜測，Linux 不好用、想省錢踢到鐵板、生產力下降等等。然而事實真是如此嗎？剛好我在 FSFE 攤位上遇到的正是住在慕尼黑、同時長期推動政府使用開源軟體的倡議者，他詳細地跟我說了慕尼黑政府從 Windows 到 Linux 再回到 Windows 的過程，以及他所看到的事情。
-LiMux 導入花了 10 年 慕尼黑政府推動開源軟體要從 13 年前說起，從評估、規劃、到開發完成 LiMux 這套 Linux 發行版花了整整 10 年。2004 年，慕尼黑推動開源軟體取代商業軟體，理由不外乎是省錢、拿回軟體的自主權。這個計劃之所以能推動，跟政府立場有很大的關係。德國的政體是內閣制，主要有兩大黨，較為保守的基督教民主聯盟（Christlich Demokratische Union Deutschlands，CDU），以及比較開放的社會民主黨（Sozialdemokratische Partei Deutschlands，SPD），一直以來，慕尼黑都是由 SPD 佔議會多數，在 2004 年時慕尼黑的關鍵小黨是綠黨，當時 SPD 與綠黨組成了聯合政府，並由 SPD 推派市長。當時的市長對開源軟體的態度很開放，並願意與自由軟體社群討論如何引入到政府單位，於是開始 LiMux 的開發與導入，並在 2013 年完成。
-政治版圖變動 2014 年時這位市長的任期到了，政治版圖也發生了變動，SPD 依然佔了多數，但這次是由 SPD 與 CDU 組成聯合政府，CDU 一向是較為支持大企業的保守政黨，而這次 SPD 的市長跟微軟的關係非常好，微軟還使出了大絕招——把微軟德國總部搬到慕尼黑，同時提供各種折扣，希望慕尼黑政府重回 Windows 懷抱。
-市長 Dieter Reiter 對外當然也有許多改回使用 Windows 的理由，不外乎是說目前 IT 遇到的問題主要都是 Linux 造成的、人員工作效率不佳、不習慣操作等等。接著找了間顧問公司 Accenture 做出了「Linux 造成政府生產力降低」的報告。於是，在 2013 年才成功導入的 LiMux，在 2016 年就通通被換回了 Windows。</description>
+      <description>在 34C3 我到了 FSFE（歐洲自由軟體基金會）的攤位，理所當然的問了一下慕尼黑政府先前究竟為何能夠推動將公部門的系統換成 Linux（LiMux），</description>
     </item>
     
     <item>
@@ -29,15 +35,7 @@ LiMux 導入花了 10 年 慕尼黑政府推動開源軟體要從 13 年前說�
       <pubDate>Sat, 16 Dec 2017 00:30:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/netneutrality/</guid>
-      <description>新聞 美國 FCC 正式廢除了網路中立性原則，什麼是網路中立性呢？簡而言之就是電信商（如我們的中華電信）作為網路的提供者，不該依照我們使用的服務不同（如 Facebook、Google）而有差別待遇。
-不再中立的網路 如果沒有網路中立性原則會發生什麼事呢？這張圖是葡萄牙電信商的收費方式，reddit 上有葡萄牙人說明了，葡萄牙的電信商會提供一個非常少的流量限制，然後讓大家購買這些「組合包」，購買某個組合包的流量只能用在那些服務上。例如買了社交組合包的人可以用 Facebook 但是不能看 Email。
-當然，還是可以選擇無限流量的方案，所以有差嗎？也許有人會問。但反過來說，電信商為什麼會想收費呢？因為這樣能收更多的錢呀。以前的電信商價格，可以是一個大部分人都可以接受、以及與其他（非常少的）電信商競爭下的結果，沒有網路中立性後，電信商可以提供特定方案給覺得有這些服務就好的人，同時讓想要可以跟網路上任何地方溝通的人收更多錢。
-很快會有一個社會，我們可以在 Facebook 上聊天，但是你傳一個重要的活動連結給對方時他跟你說：「抱歉，我沒有流量打開這個連結」
-不再有創意的網路 影響最大的是整個網路的生態，以前網路是（相對）平等的，我們可以架設部落格、放上自己的內容、修改自己的網站，以後放在 Medium 跟 Facebook 上的內容會遠遠勝過個人的網站，因為有很多人看得到那些平臺的內容但是看不到你的部落格。
-越小的服務提供者會越難競爭，想像有一個新興的影音平臺，在很多人只有「影音服務組合包」的情況下，它有可能跟 Netflix 跟 Youtube 競爭嗎？不可能。如果想要跟電信商合作呢？付錢。使用者付錢，服務提供者付錢，網站經營者付錢，電信商大勝利。
-這不是危言聳聽，在 2014 年，Netflix 早就跟美國電信商吵過架了，因為在假日的 Netflix 流量非常高，電信商就把頭腦動到 Netflix 手上——他們針對 Netflix 限速，使用者看 Netflix 的速度最低被降到了 1Mbps ，目的當然也很簡單，要求 Netflix 付錢。
-在美國 FCC 廢除網路中立性之後 我們可以怎麼做呢？我改天再寫（懶得寫），只是希望臺灣的人可以多多注意這個議題，不要讓一樣的事情發生在臺灣。雖然網路不分國界，發生在美國就足以影響全世界了。
-Battle for the net 網站 裡面有許多能夠抗爭跟宣傳議題的方法。</description>
+      <description>新聞 美國 FCC 正式廢除了網路中立性原則，什麼是網路中立性呢？簡而言之就是電信商（如我們的中華電信）作為網路的提供者，不該依照我們使用的服務不同（</description>
     </item>
     
     <item>
@@ -56,7 +54,7 @@ You can check out my social links below.</description>
       <pubDate>Wed, 29 Nov 2017 16:33:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/trainspotting/</guid>
-      <description>&amp;ldquo;Choose Life&amp;rdquo; They say.  Choose Life. Choose a job. Choose a career. Choose a family. Choose a fucking big television, choose washing machines, cars, compact disc players and electrical tin openers. Choose good health, low cholesterol, and dental insurance. Choose fixed interest mortgage repayments. Choose a starter home. Choose your friends. Choose leisurewear and matching luggage. Choose a three-piece suit on hire purchase in a range of fucking fabrics.</description>
+      <description>&amp;ldquo;Choose Life&amp;rdquo; They say. Choose Life. Choose a job. Choose a career. Choose a family. Choose a fucking big television, choose washing machines, cars, compact disc players and electrical tin openers. Choose good health, low cholesterol, and dental insurance. Choose fixed interest mortgage repayments. Choose a starter home. Choose your friends. Choose leisurewear and matching luggage. Choose a three-piece suit on hire purchase in a range of fucking fabrics. Choose</description>
     </item>
     
     <item>
@@ -65,13 +63,7 @@ You can check out my social links below.</description>
       <pubDate>Sat, 13 May 2017 17:16:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/nativeeditorwithmarkdownsupport/</guid>
-      <description>我一直不太喜歡兩欄式的 Markdown 編輯器，Hackpad 吸引人的地方並不是只有 Markdown shortcut，而是他的編輯界面依然所見即所得，Markdown 還是比較適合用在不太需要在意文件樣式的場合（例如程式文件），反而對寫文章的人來說很不友善，要一直想著被 render 出來的文章會長什麼樣子，想改文字格式還得一直改原始碼。
- 我一直不太理解 web based 支援 Markdown 的編輯器為什麼都不能簡單又所見及所得（like Hackpad），不是超多功能就是一定要寫 Markdown&amp;hellip;或是像 SimpleMDE 這樣醜醜的折衷，大概剩 Paper 處理得滿漂亮的。
-很多靜態部落格系統也愛用 Markdown，我覺得 Markdown 還是作為網路上交換的格式就好了，寫文章或做筆記還只能盯著純文字實在不是很友善呀。 這部分反而是很多人做了不錯的 Native app，最近找到 (Un)colored 竟然能所見即所得的編輯跟匯出 Markdown，界面也超棒，真的是夢寐以求的編輯器，可是還在 beta QQ，大家快來捐款支持一下阿。
-這篇也是用 (Un)colored 編輯然後匯出成 Markdown，比以前得用 vim 寫文章友善多啦。比較可惜的是作者似乎沒有把最新進度放到 GitHub 上，只能先默默捐款支持。
-說是 Native 但是用 Electron 寫的，所以有點大。不過速度很快，是個值得讚賞的 Electron app XD
-補充 格式漂亮的 Markdown 編輯器 Typora（依然有使用上的差別，Typora 是 Markodown 編輯器，(Un)colored 是所見即所得的編輯器，後來發現 (Un)colored 作者也有在 GitHub 上強調這件事）
-兩欄式的 Markdown 編輯器最經典的就是 HackMD 啦</description>
+      <description>我一直不太喜歡兩欄式的 Markdown 編輯器，Hackpad 吸引人的地方並不是只有 Markdown shortcut，而是他的編輯界面依然所見即所得，Markdown 還是</description>
     </item>
     
     <item>
@@ -80,10 +72,7 @@ You can check out my social links below.</description>
       <pubDate>Tue, 25 Apr 2017 23:42:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/opentextbook/</guid>
-      <description>美國數間大學（馬里蘭大學系統）要引入更開放的教材
-就上大學前跟上大學後自己看書（aka 不去上課）的經驗來說，我認為在臺灣，把無法進入對應大學科系的人排擠在學術門外的，絕對不是學籍或能力，而是知識的近用性跟愚蠢的資源壟斷。
-明明有大量公開資源可以學的東西，臺大一堆課程就是要用花不少錢的教材。 尤其是 Pearson，我可以理解有整套方案，但是統一用一本要八百塊，習題答案還不能給學生的教科書，還一堆人去 Chegg 付錢找答案，只能說荒謬，Chegg 根本就是 Pearson 的隨附組織。（事實上也相去不遠） 作為想學習一門學科的學生，竟然要在有許多公開、或整理的更好的資源的環境下花大錢買一本沒有解答的教科書，又可以因為沒有解答上網花錢買答案？ 更不用說拿這種教科書作為出題依據跟考試內容，學校究竟是怎麼看待學生的？學生又到底是來求知還是花錢買學歷的呢？
-題外話，文學院跟社科院很多課的讀本，不但要不到電子檔，還超愛把兩面 B5 印在一面 B4 上再裝訂成一大本，我都必須上網找原文才能開始看，這些同學到底怎麼讀的下去啊&amp;hellip;</description>
+      <description>美國數間大學（馬里蘭大學系統）要引入更開放的教材 就上大學前跟上大學後自己看書（aka 不去上課）的經驗來說，我認為在臺灣，把無法進入對應大學科</description>
     </item>
     
     <item>
@@ -92,13 +81,7 @@ You can check out my social links below.</description>
       <pubDate>Wed, 22 Mar 2017 02:10:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/rfc/</guid>
-      <description>RFC(Request for Comments) 是許多工程師都知道的規範，許多大家耳熟能詳的協定與格式如 IP、TCP、UDP、HTTP 等協定都在 RFC 規範中。但可能許多人不知道的是 RFC 的來歷，”Request for Comments”，名字怎麼會這麼特別？
-從名字可以看出， RFC 最早其實不是為了成為標準而被提出的。RFC 最早是在 UCLA 的宿舍裡被完成的，那是連 Internet 都還不存在、只有 Internet 的前身、由四所大學連結而成的 ARPANET 的時代。而這份文件如期名稱，只是尋求他人的意見（Request for Comments）的備忘錄的性質。然而在網路意料之外地瘋狂成長之下，已漸漸形成網路協定的重要規範，RFC 的起草與發佈現今也由網際網路工程任務小組（IETF）負責。
-SITCON 2017 的 Keynote 講者黃勝雄先生，便是 RFC 3743 的作者，也是臺灣第一位發佈 RFC 的作者，RFC 3743 建議了在 IDN(Internationalized Domain Names) 中使用 CJK 字元與管理方法。
-事實上如同它的名字，RFC 其實大多十分易於閱讀，如眾所皆知的 JSON 格式（RFC 7159）讀來就如同任何使用過 JSON 的人所知道的一樣簡單明瞭，RFC 也因此堪稱是網際網路歷史中規範制定的典範。
-參考資料： IETF Request for Comments(RFC) Page 
-黃勝雄先生所發佈的 RFC 3743 
-RFC 2324 - Hyper Text Coffee Pot Control Protocol (HTCPCP/1.</description>
+      <description>RFC(Request for Comments) 是許多工程師都知道的規範，許多大家耳熟能詳的協定與格式如 IP、TCP、UDP、HTTP 等協定都在 RFC 規範中。但可能許多人不知道的是 RFC 的來</description>
     </item>
     
     <item>
@@ -107,11 +90,7 @@ RFC 2324 - Hyper Text Coffee Pot Control Protocol (HTCPCP/1.</description>
       <pubDate>Wed, 22 Mar 2017 00:26:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/manilaprinciples/</guid>
-      <description>馬尼拉原則是由 EFF （電子前哨基金會）等非政府組織共同倡議的一項用於規範中間人的法律責任的原則，至目前為止也得到了國際間一百多個非政府組織的聯署支持。由於我們現今接取網路都必須透過 ISP、社群網路或搜尋引擎等服務提供業者（中間人），因此對於這些業者的法律規範會大幅地影響人們的言論自由與隱私權等各項權利。
-馬尼拉原則涉及了中間人與使用者、中間人與政府、以及中間人對第三方內容的義務與法律責任，並對相關法律責任做了原則性的規範，期望以這樣的框架能保障網路使用者的基本人權與利於創新的環境。
-文件內的條文都十分簡短且易於閱讀，推薦大家也能試著將它讀過，也許會質疑這份原則的條文都是顯而易見的道理，為什麼需要特別條列？這或許提醒了我們，網路並不如想像中的自由，這些原則也從來都不被視為理所當然。
-參考資料： 馬尼拉原則網站
-馬尼拉原則繁體中文版 GitBook</description>
+      <description>馬尼拉原則是由 EFF （電子前哨基金會）等非政府組織共同倡議的一項用於規範中間人的法律責任的原則，至目前為止也得到了國際間一百多個非政府組織的聯署</description>
     </item>
     
     <item>
@@ -120,16 +99,7 @@ RFC 2324 - Hyper Text Coffee Pot Control Protocol (HTCPCP/1.</description>
       <pubDate>Mon, 20 Mar 2017 20:45:00 +0800</pubDate>
       
       <guid>https://viktorl.in/Blog/post/transreport/</guid>
-      <description>透明度報告指的是由企業所定期公佈給大眾檢視、包含所有來自權力機構（如政府）對於個人資料的各式要求的報告，常見的內容有政府對該公司索取個人資料、移除內容的請求，以及該企業對這些請求的回應情形。尤其在 2013 年的史諾登事件後，越來越多公司開始主動定期發表透明度報告，以博取使用者的信任。
-Gag Order 與 Warrant Canary 然而，有時政府在要求資料時甚至會依法禁止該企業與當事人公佈或發表相關言論（如美國的 Gag Order），因此有些企業會在透明度報告中加上 “Warrant Canary”，Warrant Canary 的做法是在定期公佈的透明度報告中聲明該企業沒有收到禁止相關言論的調查，並在收到這種調查時將 Warrant Canary 拿掉。一些大型網路公司如 Apple、Reddit 都曾在透明度報告中加上 Warrant Canary，但現在都已消失。
-台灣網路透明度報告 SITCON 2017 Keynote 講者之一何明諠先生是《台灣網路透明度報告》的專案經理，由於台灣政府對於網路上的個人資料及隱私權的相關法令十分落後，甚至能在沒有標準流程與相關法令下向企業索取用戶資料，因此台權會希望透過這樣的計劃向大眾呈現政府向網路業者索取與要求移除資料的情形，並督促政府提出標準流程及法令依據，以保障所有網路使用者的基本人權。
-參考資料： 台灣網路透明報告網站 
-台灣網路透明報告報告 PDF 
-EFF 誰挺你（Who Has Your Back）2014 隱私年度報告摘譯
-EFF Who Has Your Back 2015 
-EFF Who Has Your Back 2016 
-《聯合國隱私特別報告員 Joseph A. Cannataci 第一次隱私權報告》
-（A/HRC/31/64｜2016年3月｜第31屆人權理事會｜中、英文）</description>
+      <description>透明度報告指的是由企業所定期公佈給大眾檢視、包含所有來自權力機構（如政府）對於個人資料的各式要求的報告，常見的內容有政府對該公司索取個人資料</description>
     </item>
     
   </channel>
