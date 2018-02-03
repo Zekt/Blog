@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>網路中立性 on Literally Programming</title>
+    <link>https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF%E4%B8%AD%E7%AB%8B%E6%80%A7/</link>
+    <description>Recent content in 網路中立性 on Literally Programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 16 Dec 2017 00:30:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF%E4%B8%AD%E7%AB%8B%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>不再中立的網路——寫在美國廢除網路中立性之後</title>
+      <link>https://viktorl.in/Blog/post/netneutrality/</link>
+      <pubDate>Sat, 16 Dec 2017 00:30:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/post/netneutrality/</guid>
+      <description>新聞 美國 FCC 正式廢除了網路中立性原則，什麼是網路中立性呢？簡而言之就是電信商（如我們的中華電信）作為網路的提供者，不該依照我們使用的服務不同（</description>
+    </item>
+    
+  </channel>
+</rss>

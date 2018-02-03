@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>網路治理 on Literally Programming</title>
+    <link>https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF%E6%B2%BB%E7%90%86/</link>
+    <description>Recent content in 網路治理 on Literally Programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 22 Mar 2017 02:10:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://viktorl.in/Blog/tags/%E7%B6%B2%E8%B7%AF%E6%B2%BB%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RFC(Request for Comments)</title>
+      <link>https://viktorl.in/Blog/post/rfc/</link>
+      <pubDate>Wed, 22 Mar 2017 02:10:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/post/rfc/</guid>
+      <description>RFC(Request for Comments) 是許多工程師都知道的規範，許多大家耳熟能詳的協定與格式如 IP、TCP、UDP、HTTP 等協定都在 RFC 規範中。但可能許多人不知道的是 RFC 的來</description>
+    </item>
+    
+    <item>
+      <title>馬尼拉原則</title>
+      <link>https://viktorl.in/Blog/post/manilaprinciples/</link>
+      <pubDate>Wed, 22 Mar 2017 00:26:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/post/manilaprinciples/</guid>
+      <description>馬尼拉原則是由 EFF （電子前哨基金會）等非政府組織共同倡議的一項用於規範中間人的法律責任的原則，至目前為止也得到了國際間一百多個非政府組織的聯署</description>
+    </item>
+    
+    <item>
+      <title>透明度報告</title>
+      <link>https://viktorl.in/Blog/post/transreport/</link>
+      <pubDate>Mon, 20 Mar 2017 20:45:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/post/transreport/</guid>
+      <description>透明度報告指的是由企業所定期公佈給大眾檢視、包含所有來自權力機構（如政府）對於個人資料的各式要求的報告，常見的內容有政府對該公司索取個人資料</description>
+    </item>
+    
+  </channel>
+</rss>
