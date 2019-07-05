@@ -8,11 +8,12 @@ theme = "hugo-theme-cactus-plus"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-91271148-1"
 PygmentsCodeFences = true
+hasCJKLanguage = true
 
 [params]
 	name = "Literally Programming"
-	description = "Philosophy, Functional Language, Anarchism, Hacker"
-	bio = "Philosophy, Functional Language, Anarchism, Hacker"
+	description = "Philosophy, Functional Programming, Anarchism, Hacktivism"
+	bio = "Philosophy, Functional Programming, Anarchism, Hacktivism"
 	# Enter optionally your twitter account
 	twitter = ""
 	enableRSS = true
@@ -70,7 +71,6 @@ PygmentsCodeFences = true
 	# The social icons can be styled differently if you use mono as font - circle, rounded, or empty
 	socialIconStyle = ""
 
-	hasCJKLanguage = true
 
 
 # Add additional social link entries underneath

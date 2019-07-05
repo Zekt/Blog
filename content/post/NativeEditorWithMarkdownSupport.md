@@ -2,6 +2,7 @@
 title = "支援 Markdown 的原生文章編輯器 (Un)colored"
 date = "2017-05-13T17:16:00+08:00"
 tags = ["工具", "編輯器"]
+draft=true
 +++
 
 我一直不太喜歡兩欄式的 Markdown 編輯器，[Hackpad](http://hackpad.com/) 吸引人的地方並不是只有 Markdown shortcut，而是他的編輯界面依然所見即所得，Markdown 還是比較適合用在不太需要在意文件樣式的場合（例如程式文件），反而對寫文章的人來說很不友善，要一直想著被 render 出來的文章會長什麼樣子，想改文字格式還得一直改原始碼。
