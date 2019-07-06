@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Literally Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Feb 2018 05:31:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://viktorl.in/Blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>新世紀福音戰士——存在的焦慮令人窒息</title>
+      <link>https://viktorl.in/Blog/post/eva1/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://viktorl.in/Blog/post/eva1/</guid>
+      <description>順便跟上 Netflix 上映的風潮，寫一下以前就想寫的心得。隨然還有很多內容（像是親情扮演的角色與夢的解析）可以稍加著墨，但對於一部似乎反對觀眾太沉迷於自</description>
+    </item>
     
     <item>
       <title>駭客、自由、安那其：在柏林倒下的是思想的高牆／德國駭客大會紀實</title>
@@ -45,15 +54,6 @@
       
       <guid>https://viktorl.in/Blog/post/trainspotting/</guid>
       <description>&amp;ldquo;Choose Life&amp;rdquo; They say. Choose Life. Choose a job. Choose a career. Choose a family. Choose a fucking big television, choose washing machines, cars, compact disc players and electrical tin openers. Choose good health, low cholesterol, and dental insurance. Choose fixed interest mortgage repayments. Choose a starter home. Choose your friends. Choose leisurewear and matching luggage. Choose a three-piece suit on hire purchase in a range of fucking fabrics. Choose</description>
-    </item>
-    
-    <item>
-      <title>支援 Markdown 的原生文章編輯器 (Un)colored</title>
-      <link>https://viktorl.in/Blog/post/nativeeditorwithmarkdownsupport/</link>
-      <pubDate>Sat, 13 May 2017 17:16:00 +0800</pubDate>
-      
-      <guid>https://viktorl.in/Blog/post/nativeeditorwithmarkdownsupport/</guid>
-      <description>我一直不太喜歡兩欄式的 Markdown 編輯器，Hackpad 吸引人的地方並不是只有 Markdown shortcut，而是他的編輯界面依然所見即所得，Markdown 還是</description>
     </item>
     
     <item>
