@@ -11,11 +11,11 @@ import           System.FilePath               (takeBaseName)
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match ("images/*" .||. "js/*") $ do
+    match ("images/**" .||. "js/*") $ do
         route   idRoute
         compile copyFileCompiler
 
-    match "css/*" $ do
+    match "css/**" $ do
         route   idRoute
         compile compressCssCompiler
 
@@ -67,8 +67,8 @@ main = hakyll $ do
             posts <- loadAll ("posts/*" .&&. hasVersion "meta")
             let taggedPostCtx = postCtxWithTags tags          `mappend`
                                 (relatedPostsCtx posts 3)
-
             pandocCompiler
+                >>= applyAsTemplate baseNodeCtx
                 >>= saveSnapshot "content"
                 >>= loadAndApplyTemplate "templates/post.html" taggedPostCtx
                 >>= loadAndApplyTemplate "templates/default.html" (taggedPostCtx <> baseSidebarCtx <> siteCtx)
@@ -146,11 +146,11 @@ postsPageId n = fromFilePath $ if (n == 1) then "index.html" else show n ++ "/in
 
 feedConfig :: FeedConfiguration
 feedConfig = FeedConfiguration
-    { feedTitle       = "lanyon-hakyll: Lanyon Theme on Hakyll"
-    , feedDescription = "A Fork of Lanyon based on Poole"
-    , feedAuthorName  = "Heuna Kim"
-    , feedAuthorEmail = "ai@heuna-kim.net"
-    , feedRoot        = "https://github.com/hahey/lanyon-hakyll"
+    { feedTitle       = "Literally Programming"
+    , feedDescription = ""
+    , feedAuthorName  = "Viktor Lin "
+    , feedAuthorEmail = "hi@viktorl.in"
+    , feedRoot        = "https://zekt.github.io/Blog"
     }
 
 --------------------------------------------------------------------------------
@@ -158,12 +158,12 @@ feedConfig = FeedConfiguration
 siteCtx :: Context String
 siteCtx =
     baseCtx `mappend`
-    constField "site_description" "Lanyon Theme on Hakyll" `mappend`
-    constField "site-url" "https://github.com/hahey/lanyon-hakyll" `mappend`
-    constField "tagline" "A Fork of Lanyon based on Poole" `mappend`
-    constField "site-title" "lanyon-hakyll" `mappend`
-    constField "copy-year" "2020" `mappend`
-    constField "github-repo" "https://github.com/hahey/lanyon-hakyll" `mappend`
+    constField "site_description" "" `mappend`
+    constField "site-url" "https://zekt.github.io/Blog" `mappend`
+    constField "tagline" "& Absurd Reasoning" `mappend`
+    constField "site-title" "Literally Programming" `mappend`
+    constField "copy-year" "2021" `mappend`
+    constField "github-repo" "https://github.com/Zekt/Blog" `mappend`
     defaultContext
 
 baseCtx =
