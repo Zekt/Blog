@@ -1,136 +1,21 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
-  <head>
-  <!---
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  -->
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-  <title>
-    
-      Literally Programming &middot; & Absurd Reasoning
-    
-  </title>
-
-  
-      
-  <link rel="canonical" href="https://viktorl.in/Blog/index.html">
-      
-  
-
-  <link rel="stylesheet" href="https://viktorl.in/Blog/css/poole.css">
-  <link rel="stylesheet" href="https://viktorl.in/Blog/css/syntax.css">
-  <link rel="stylesheet" href="https://viktorl.in/Blog/css/lanyon.css">
-  <link rel="stylesheet" href="https://viktorl.in/Blog/css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@300;700&family=PT+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-  <!---
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}">
-  <link rel="shortcut icon" href="{{ '/public/favicon.ico' | absolute_url }}">
-  -->
-
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://viktorl.in/Blog/atom.xml">
-
-  <!--- deactivate google analytics
-  {% if site.google_analytics_id %}
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', '{{ site.google_analytics_id }}', 'auto');
-    ga('send', 'pageview');
-  </script>
-  {% endif %}
-  -->
-</head>
-
-
-  <body>
-
-    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
-<!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p></p>
-  </div>
-
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item active" href="https://viktorl.in/Blog">Home</a>
-
-    <!--- The code below dynamically generates a sidebar nav of the files in the folder /pages -->
-
-    
-      
-        <a class="sidebar-nav-item" href="https://viktorl.in/Blog/pages/About.html">About</a>
-      
-    
-      
-        <a class="sidebar-nav-item" href="https://viktorl.in/Blog/pages/Contact.html">Contact</a>
-      
-    
-
-    <a class="sidebar-nav-item" href="https://viktorl.in/Blog/archive.html">Archive</a>
-
-    <a class="sidebar-nav-item" href="https://viktorl.in/Blog/tag-cloud.html">Tags</a>
-
-    <a class="sidebar-nav-item" href="https://github.com/Zekt/Blog">GitHub project</a>
-
-  </nav>
-
-  <div class="sidebar-item">
-    <p>
-      &copy; 2021. All rights reserved.
-    </p>
-    <p>
-        <img src="https://viktorl.in/Blog/images/haskell-logo.png" class="logo" style="display: inline;" />
-        Site created with
-        <a href="https://jaspervdj.be/hakyll">Hakyll</a>.
-        <br>
-        Modified theme
-        <a href="https://github.com/hahey/lanyon-hakyll">lanyon-hakyll</a>
-        based on
-        <a href="https://lanyon.getpoole.com/">Lanyon</a>.
-    </p>
-  </div>
-</div>
-
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="https://viktorl.in/Blog" title="Home">Literally Programming</a>
-            <small>& Absurd Reasoning</small>
-          </h3>
-        </div>
-      </div>
-
-      <div class="container content">
-          <div class="posts">
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="./posts/2019-07-01-EVA.html">
-        新世紀福音戰士——存在的焦慮令人窒息
-      </a>
-    </h1>
-    <span class="post-date">June 30, 2019,
-      
-    </span>
-
-    <div id="truncate">
-      <div id="preview-content">
-         <p>順便跟上 Netflix 上映的風潮，寫一下以前就想寫的心得。雖然還有很多內容（像是親情扮演的角色與夢的解析）可以稍加著墨，但對於一部似乎反對觀眾太沉迷於自己的商業作品來說，還是點到為止就好吧。</p>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Literally Programming</title>
+    <link href="https://zekt.github.io/Blog/atom.xml" rel="self" />
+    <link href="https://zekt.github.io/Blog" />
+    <id>https://zekt.github.io/Blog/atom.xml</id>
+    <author>
+        <name>Viktor Lin </name>
+        <email>hi@viktorl.in</email>
+    </author>
+    <updated>2019-06-30T16:00:00Z</updated>
+    <entry>
+    <title>新世紀福音戰士——存在的焦慮令人窒息</title>
+    <link href="https://zekt.github.io/Blog/posts/2019-07-01-EVA.html" />
+    <id>https://zekt.github.io/Blog/posts/2019-07-01-EVA.html</id>
+    <published>2019-06-30T16:00:00Z</published>
+    <updated>2019-06-30T16:00:00Z</updated>
+    <summary type="html"><![CDATA[<p>順便跟上 Netflix 上映的風潮，寫一下以前就想寫的心得。雖然還有很多內容（像是親情扮演的角色與夢的解析）可以稍加著墨，但對於一部似乎反對觀眾太沉迷於自己的商業作品來說，還是點到為止就好吧。</p>
 <h1 id="碇真嗣為什麼要掐死明日香">碇真嗣為什麼要掐死明日香？</h1>
 <p>我有 99% 的把握庵野秀明讀過尼采的《悲劇的誕生》。不過先不論這本書的內容，EVA 本身就是一部很荒謬的作品（既是普遍的荒謬，也是存在主義式的荒謬）。直到第 16 集堪稱精彩，但還算正常的動畫情節，大約在第 16 或是 18 集開始急轉直下、而到第 25 集、還是補完劇情的 End of Evangelion，都像脫韁的野馬，不再在乎觀眾的思緒能否跟上。劇情就像卡繆所描述「荒謬的藝術作品」應該要有的模樣：「藝術作品誕生自理性拒絕理解現實」——如同面對現實的荒謬一般，作者要做的不是解釋，而是讓事件如其所是的發生；而作為觀眾，我們只能嘗試去理解，而非期待劇情總在我們的預想內自圓其說。</p>
 <p>這誠然是對觀眾的一種挑釁，也是作者對自己的挑戰。在要求人們花費心力理解的當下，作品能否解釋自己的荒謬性就成了成敗的關鍵，而以一部商業作品來說，EVA 做的太成功了，甚至在電視動畫這種在形式上就必須以商業為考量的創作中，很難想像還有更能具有某種「藝術性」但又兼具商業銅臭味的作品。我指的是電視動畫的高成本與回收成本的形式注定了每集都得依據觀眾評分，決定接下來發展的命運。還沒完成的作品就要被評價左右內容，就是速食、資本主義、大眾的愚昧與平庸最極端的展現。在這種環境下，作品的藝術性勢必有其極限。EVA 每集片尾預告都會讓三石琴乃（葛城美里的聲優）出來喊兩句「下一集也有 fan service 哦～」，其實下一集只有更多悲劇與謎團，我想也是一種跳脫劇情外，還要假裝自己是普通動畫的惡趣味。</p>
@@ -150,25 +35,15 @@
 <li id="fn1" role="doc-endnote"><p>這個瞬間背景開始撥放 <a href="https://www.youtube.com/watch?v=oIscL-Bjsq4"><em>Komm, Susser Tod</em></a>，象徵這一掐是補完計畫的開端<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2" role="doc-endnote"><p>尼采是引用來批評（當時的）現代社會對藝術作品的隨便：現代的藝術墮落至以滿足評論者為生，而評論者透過批評來在這種冷漠的社會間稍微建立點羈絆。<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section>
-      </div>
-      <div id="gradient"></div>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="./posts/2018-02-04-34C3.html">
-        駭客、自由、安那其：在柏林倒下的是思想的高牆／德國駭客大會紀實
-      </a>
-    </h1>
-    <span class="post-date">February  4, 2018,
-      
-    </span>
-
-    <div id="truncate">
-      <div id="preview-content">
-         <p>「德國極右派的比例一直都是全歐洲最低，他們經歷過納粹德國、同盟國佔領與冷戰，他們知道 What could possibly go wrong。」從歐洲回來後，我在 g0v 大松遇到一位也有去 34C3 的德國人，他這麼跟我說。</p>
+</section>]]></summary>
+</entry>
+<entry>
+    <title>駭客、自由、安那其：在柏林倒下的是思想的高牆／德國駭客大會紀實</title>
+    <link href="https://zekt.github.io/Blog/posts/2018-02-04-34C3.html" />
+    <id>https://zekt.github.io/Blog/posts/2018-02-04-34C3.html</id>
+    <published>2018-02-04T00:00:00Z</published>
+    <updated>2018-02-04T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<p>「德國極右派的比例一直都是全歐洲最低，他們經歷過納粹德國、同盟國佔領與冷戰，他們知道 What could possibly go wrong。」從歐洲回來後，我在 g0v 大松遇到一位也有去 34C3 的德國人，他這麼跟我說。</p>
 <p>2017 年 12 月 26 號，我與一群朋友抵達了德國萊比錫，這趟出遊的主要目標是隔天開始，為期四天的 Chaos Communication Congress（混亂通訊大會），簡稱 CCC/C3，這次是大會的第 34 屆，所以大家會稱呼它為 34C3。CCC 在媒體上也許不如 DEFCON、BlackHat 等資安駭客大會出名，但在駭客文化上它絕對是佔據了無可取代的地位，甚至你可以說，1960 年代在美國開始的駭客精神在矽谷也許奄奄一息，卻在 80 年代的柏林生根發芽。</p>
 <h1 id="ccc-是什麼">CCC 是什麼？</h1>
 <p>CCC 其實同時是三個名詞的縮寫：Chaos Computer Club、Chaos Communication Congress、Chaos Communication Camp，分別是最早組成的俱樂部、每年一次的大會、以及四年一次的大露營。Chaos Computer Club（混亂計算機俱樂部）成立於 1981 年 9 月 12 日，地點是《日報》（Die Tageszeitung）的總部，《日報》是一間 1978 年才成立的左翼報紙，在日後的德國有著巨大的影響力<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。而這間房間裡的會議桌以前屬於一號公社（Kommune 1，簡稱 K1），一號公社是納粹垮臺之後，第一代長大的年輕人們在 60 年代成立的公社，也是德國史上第一間男女混租的公寓。他們也意圖挑戰資本主義下，中產階級的核心家庭觀。在這個充滿政治宣示意味的地點，1981 年 9 月 1 號，駭客兼《日報》記者 Wau Holland 與另一名駭客 Klaus Schleisiek 共同刊載了一份文件 <a href="https://berlin.ccc.de/wiki/TUWAT.TXT">TUWAT.TXT</a> 在《日報》上，此成為 Chaos Computer Club 的開端，也是這次 34C3 的 motto。</p>
@@ -282,25 +157,15 @@
 <li id="fn6" role="doc-endnote"><p>美國 MIT 學生，因為大量下載並公開 JSTOR 資料庫內的學術論文被判刑 20 年，隨後在 2013 年自殺。在他的<a href="http://www.aaronsw.com/weblog/23c3">部落格</a>還找得到他參與 23C3 的想法。<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7" role="doc-endnote"><p>十萬人中不乏激進的左翼組織，事實上也有發生丟擲燃燒彈、燒車、破壞店家等暴力行為，但被公開搜索的對象卻遠多於此。<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section>
-      </div>
-      <div id="gradient"></div>
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="./posts/2018-01-09-LiMux.html">
-        慕尼黑政府從 Linux 換回 Windows 的背後，倡議者的視角
-      </a>
-    </h1>
-    <span class="post-date">January  8, 2018,
-      
-    </span>
-
-    <div id="truncate">
-      <div id="preview-content">
-         <p>在 34C3 我到了 FSFE（歐洲自由軟體基金會）的攤位，理所當然的問了一下慕尼黑政府先前究竟為何能夠推動將公部門的系統換成 Linux（LiMux），以及後來為何又換回 Windows。從地球的另一端總是有許多新聞，其中也有許多猜測，Linux 不好用、想省錢踢到鐵板、生產力下降等等。然而事實真是如此嗎？剛好我在 FSFE 攤位上遇到的正是住在慕尼黑、同時長期推動政府使用開源軟體的倡議者，他詳細地跟我說了慕尼黑政府從 Windows 到 Linux 再回到 Windows 的過程，以及他所看到的事情。</p>
+</section>]]></summary>
+</entry>
+<entry>
+    <title>慕尼黑政府從 Linux 換回 Windows 的背後，倡議者的視角</title>
+    <link href="https://zekt.github.io/Blog/posts/2018-01-09-LiMux.html" />
+    <id>https://zekt.github.io/Blog/posts/2018-01-09-LiMux.html</id>
+    <published>2018-01-08T23:03:00Z</published>
+    <updated>2018-01-08T23:03:00Z</updated>
+    <summary type="html"><![CDATA[<p>在 34C3 我到了 FSFE（歐洲自由軟體基金會）的攤位，理所當然的問了一下慕尼黑政府先前究竟為何能夠推動將公部門的系統換成 Linux（LiMux），以及後來為何又換回 Windows。從地球的另一端總是有許多新聞，其中也有許多猜測，Linux 不好用、想省錢踢到鐵板、生產力下降等等。然而事實真是如此嗎？剛好我在 FSFE 攤位上遇到的正是住在慕尼黑、同時長期推動政府使用開源軟體的倡議者，他詳細地跟我說了慕尼黑政府從 Windows 到 Linux 再回到 Windows 的過程，以及他所看到的事情。</p>
 <h1 id="limux-導入花了-10-年">LiMux 導入花了 10 年</h1>
 <p>慕尼黑政府推動開源軟體要從 13 年前說起，從評估、規劃、到開發完成 LiMux 這套 Linux 發行版花了整整 10 年。2004 年，慕尼黑推動開源軟體取代商業軟體，理由不外乎是省錢、拿回軟體的自主權。這個計劃之所以能推動，跟政府立場有很大的關係。德國的政體是內閣制，主要有兩大黨，較為保守的基督教民主聯盟（Christlich Demokratische Union Deutschlands，CDU），以及比較開放的社會民主黨（Sozialdemokratische Partei Deutschlands，SPD），一直以來，慕尼黑都是由 SPD 佔議會多數，在 2004 年時慕尼黑的關鍵小黨是綠黨，當時 SPD 與綠黨組成了聯合政府，並由 SPD 推派市長。當時的市長對開源軟體的態度很開放，並願意與自由軟體社群討論如何引入到政府單位，於是開始 LiMux 的開發與導入，並在 2013 年完成。</p>
 <h1 id="政治版圖變動">政治版圖變動</h1>
@@ -312,30 +177,90 @@
 <h1 id="未來方向">未來方向</h1>
 <p>我問他，在這樣的狀況下，要慕尼黑第二次換用 LiMux 是幾乎不可能了吧？（他們才剛付 5000 萬歐元給微軟呢）他也同意，目前他們努力的方向會是先推動各個自由的應用軟體取代公務人員常用的專利軟體。</p>
 <p>FSFE 把 LiMux 稱為「Lighthouse Project」（燈塔專案）。其實在 LiMux 之前，有許多德國的小城市就已經在使用 Linux 作為辦公用的作業系統了，但慕尼黑是百萬人的大城市，也是微軟鎖定的目標，因此如果能成功推動自由作業系統，在德國以及全世界都會是很好的榜樣。</p>
-<p>在慕尼黑剛導入 LiMux 時，德國也有一些城市想跟進，這時微軟的業務員就會走進市政府提供超低價優惠，讓各個政府不想花額外的成本導入自由軟體。當年慕尼黑推動這個計劃時，微軟 CEO 更是不辭辛勞的飛來慕尼黑，提供數百萬歐元的優惠，當時的市長不為所動，但現在的市長就不是如此了。</p>
-      </div>
-      <div id="gradient"></div>
-    </div>
-  </div>
-  
-</div>
+<p>在慕尼黑剛導入 LiMux 時，德國也有一些城市想跟進，這時微軟的業務員就會走進市政府提供超低價優惠，讓各個政府不想花額外的成本導入自由軟體。當年慕尼黑推動這個計劃時，微軟 CEO 更是不辭辛勞的飛來慕尼黑，提供數百萬歐元的優惠，當時的市長不為所動，但現在的市長就不是如此了。</p>]]></summary>
+</entry>
+<entry>
+    <title>不再中立的網路——寫在美國廢除網路中立性之後</title>
+    <link href="https://zekt.github.io/Blog/posts/2017-12-16-NetNeutrality.html" />
+    <id>https://zekt.github.io/Blog/posts/2017-12-16-NetNeutrality.html</id>
+    <published>2017-12-15T16:30:00Z</published>
+    <updated>2017-12-15T16:30:00Z</updated>
+    <summary type="html"><![CDATA[<p><a href="https://www.nytimes.com/2017/12/14/technology/net-neutrality-repeal-vote.html">新聞</a></p>
+<p>美國 FCC 正式廢除了網路中立性原則，什麼是網路中立性呢？簡而言之就是電信商（如我們的中華電信）作為網路的提供者，不該依照我們使用的服務不同（如 Facebook、Google）而有差別待遇。</p>
+<h2 id="不再中立的網路">不再中立的網路</h2>
+<p><img src="https://i.imgur.com/FwCIsF5.jpg" /></p>
+<p>如果沒有網路中立性原則會發生什麼事呢？這張圖是葡萄牙電信商的收費方式，reddit 上有葡萄牙人說明了，葡萄牙的電信商會提供一個非常少的流量限制，然後讓大家購買這些「組合包」，購買某個組合包的流量只能用在那些服務上。例如買了社交組合包的人可以用 Facebook 但是不能看 Email。</p>
+<p>當然，還是可以選擇無限流量的方案，所以有差嗎？也許有人會問。但反過來說，電信商為什麼會想收費呢？因為這樣能收更多的錢呀。以前的電信商價格，可以是一個大部分人都可以接受、以及與其他（非常少的）電信商競爭下的結果，沒有網路中立性後，電信商可以提供特定方案給覺得有這些服務就好的人，同時讓想要可以跟網路上任何地方溝通的人收更多錢。</p>
+<p>很快會有一個社會，我們可以在 Facebook 上聊天，但是你傳一個重要的活動連結給對方時他跟你說：「抱歉，我沒有流量打開這個連結」</p>
+<h2 id="不再有創意的網路">不再有創意的網路</h2>
+<p>影響最大的是整個網路的生態，以前網路是（相對）平等的，我們可以架設部落格、放上自己的內容、修改自己的網站，以後放在 Medium 跟 Facebook 上的內容會遠遠勝過個人的網站，因為有很多人看得到那些平臺的內容但是看不到你的部落格。</p>
+<p>越小的服務提供者會越難競爭，想像有一個新興的影音平臺，在很多人只有「影音服務組合包」的情況下，它有可能跟 Netflix 跟 Youtube 競爭嗎？不可能。如果想要跟電信商合作呢？付錢。使用者付錢，服務提供者付錢，網站經營者付錢，電信商大勝利。</p>
+<p>這不是危言聳聽，在 2014 年，Netflix 早就跟美國電信商吵過架了，因為在假日的 Netflix 流量非常高，電信商就把頭腦動到 Netflix 手上——他們針對 Netflix 限速，使用者看 Netflix 的速度最低被降到了 1Mbps ，目的當然也很簡單，要求 Netflix 付錢。</p>
+<h2 id="在美國-fcc-廢除網路中立性之後">在美國 FCC 廢除網路中立性之後</h2>
+<p>我們可以怎麼做呢？我改天再寫（懶得寫），只是希望臺灣的人可以多多注意這個議題，不要讓一樣的事情發生在臺灣。雖然網路不分國界，發生在美國就足以影響全世界了。</p>
+<p><a href="https://www.battleforthenet.com/">Battle for the net 網站</a> 裡面有許多能夠抗爭跟宣傳議題的方法。</p>]]></summary>
+</entry>
+<entry>
+    <title>"Choose Life" They say.</title>
+    <link href="https://zekt.github.io/Blog/posts/2017-11-29-Trainspotting.html" />
+    <id>https://zekt.github.io/Blog/posts/2017-11-29-Trainspotting.html</id>
+    <published>2017-11-29T08:33:00Z</published>
+    <updated>2017-11-29T08:33:00Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>Choose Life. Choose a job. Choose a career. Choose a family. Choose a fucking big television, choose washing machines, cars, compact disc players and electrical tin openers. Choose good health, low cholesterol, and dental insurance. Choose fixed interest mortgage repayments. Choose a starter home. Choose your friends. Choose leisurewear and matching luggage. Choose a three-piece suit on hire purchase in a range of fucking fabrics. Choose DIY and wondering who the fuck you are on Sunday morning. Choose sitting on that couch watching mind-numbing, spirit-crushing game shows, stuffing fucking junk food into your mouth. Choose rotting away at the end of it all, pissing your last in a miserable home, nothing more than an embarrassment to the selfish, fucked up brats you spawned to replace yourselves. Choose your future. Choose life…</p>
+</blockquote>
+<p>Trainspotting 風格暗沉、頹廢、暴力、情色、濫用毒品、自我放逐…至少在他們眼中是如此，那些對著你說「Choose Life」的人。「Choose Life」到底想表達什麼意思呢？以一句反毒標語來看似乎帶著一點雙關，一方面它意指這些毒蟲們放棄選擇、放棄大好前途而自我放逐，而希望他們振作、重新掌握對生命做出選擇的權力。另一方面，它又暗指這些人選擇了生命的對立面，他們的選擇不能被稱為人生——他們應該回到正軌，選擇「人生」、面對人生。但是何必呢？</p>
+<blockquote>
+<p>But why would I want to do a thing like that? I chose not to choose life. I chose somethin’ else. And the reasons? There are no reasons. Who needs reasons when you’ve got heroin?</p>
+</blockquote>
+<p>90 年代的 Trainspotting 放到今日一點都不顯得過時。無所事事的年輕人，沒有目標的生活，社會告訴我們往未知、沒有目的的方向消磨光陰、最後心滿意足的去死。這個社會總是說的太多，給的卻太少，用選擇的假象敷衍荒謬的事實。想要好生活？選擇一份好工作吧。想要好家庭？選擇一個好伴侶吧。選擇你在社會中的位置、選擇你的家庭、選擇你的環境、選擇你住的城市、選擇你小孩要上哪間學校、選擇你的朋友。選擇歧視少數、選擇鞏固階級、選擇朝九晚五的工作、選擇一夫一妻、選擇被制度篩選淘汰、選擇沒人知道來由的繁文縟節、選擇活得對社會負責。但這樣就會令人生變好嗎？不會有人這麼保證。因為若你的未來失敗又痛苦，就是你的選擇錯了，你只能乖乖承受。真是個狗屁社會對吧？那何必這麼辛苦呢？當你可以選擇不為未來存錢、不積極追求異性、不想著以後的小孩要吃什麼過活，當你可以選擇性愛與海洛因，誰需要虛幻的謊言呢？</p>
+<p>Mark Renton 是個聰明人。至少比他的好友們聰明。他也選擇了他的人生，他選擇追求慾望、他選擇給絕望的好友一劑海洛因、他選擇試著過好生活、他選擇改變、他選擇背叛、他選擇逃跑。但是其他沒那麼聰明的人呢？</p>
+<p>從 Transpotting 到 T2，「Choose Life」的標語都像個天大的笑話，在叫別人 Choose Life 前，憑什麼說別人沒有 Choose Life 呢？</p>]]></summary>
+</entry>
+<entry>
+    <title>RFC (Request for Comments)</title>
+    <link href="https://zekt.github.io/Blog/posts/2017-03-22-RFC.html" />
+    <id>https://zekt.github.io/Blog/posts/2017-03-22-RFC.html</id>
+    <published>2017-03-21T18:10:00Z</published>
+    <updated>2017-03-21T18:10:00Z</updated>
+    <summary type="html"><![CDATA[<p>RFC (Request for Comments) 是許多工程師都知道的規範，許多大家耳熟能詳的協定與格式如 IP、TCP、UDP、HTTP 等協定都在 RFC 規範中。但可能許多人不知道的是 RFC 的來歷，「Request for Comments」，名字怎麼會這麼特別？</p>
+<p>從名字可以看出， RFC 最早其實不是為了成為標準而被提出的。RFC 最早是在 UCLA 的宿舍裡被完成的，那是連 Internet 都還不存在、只有 Internet 的前身、由四所大學連結而成的 ARPANET 的時代。而這份文件如期名稱，只是尋求他人的意見（Request for Comments）的備忘錄的性質。然而在網路意料之外地瘋狂成長之下，已漸漸形成網路協定的重要規範，RFC 的起草與發佈現今也由網際網路工程任務小組（IETF）負責。</p>
+<p>SITCON 2017 的 Keynote 講者黃勝雄先生是臺灣第一位發佈 RFC 的作者，他所發布的 RFC 3743 建議了在 IDN (Internationalized Domain Names) 中使用 CJK 字元與管理的方法。</p>
+<p>如同它的名字，RFC 大多十分易於閱讀，如眾所皆知的 JSON 格式（RFC 7159）讀來就如同任何使用過 JSON 的人所知道的一樣簡單明瞭，RFC 也因此堪稱是網際網路歷史中規範制定的典範。 ## 參考資料： <a href="https://www.ietf.org/rfc.html">IETF Request for Comments(RFC) Page</a><br />
+<a href="https://www.ietf.org/rfc/rfc3743.txt">黃勝雄先生所發佈的 RFC 3743</a><br />
+<a href="https://www.ietf.org/rfc/rfc2324.txt">RFC 2324 - Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0) 超文字咖啡壺控制協定</a></p>]]></summary>
+</entry>
+<entry>
+    <title>馬尼拉原則</title>
+    <link href="https://zekt.github.io/Blog/posts/2017-03-22-ManilaPrinciples.html" />
+    <id>https://zekt.github.io/Blog/posts/2017-03-22-ManilaPrinciples.html</id>
+    <published>2017-03-21T16:26:00Z</published>
+    <updated>2017-03-21T16:26:00Z</updated>
+    <summary type="html"><![CDATA[<p>馬尼拉原則是由 EFF （電子前哨基金會）等非政府組織共同倡議的一項用於規範中間人的法律責任的原則，至目前為止也得到了國際間一百多個非政府組織的聯署支持。由於我們現今接取網路都必須透過 ISP、社群網路或搜尋引擎等服務提供業者（中間人），因此對於這些業者的法律規範會大幅地影響人們的言論自由與隱私權等各項權利。</p>
+<p>馬尼拉原則涉及了中間人與使用者、中間人與政府、以及中間人對第三方內容的義務與法律責任，並對相關法律責任做了原則性的規範，期望以這樣的框架能保障網路使用者的基本人權與利於創新的環境。</p>
+<p>文件內的條文都十分簡短且易於閱讀，推薦大家也能試著將它讀過，也許會質疑這份原則的條文都是顯而易見的道理，為什麼需要特別條列？這或許提醒了我們，網路並不如想像中的自由，這些原則也從來都不被視為理所當然。</p>
+<h2 id="參考資料">參考資料：</h2>
+<p><a href="https://www.manilaprinciples.org">馬尼拉原則網站</a><br />
+<a href="https://nninlaw.gitbooks.io/manila-principles/">馬尼拉原則繁體中文版 GitBook</a></p>]]></summary>
+</entry>
+<entry>
+    <title>網路透明報告</title>
+    <link href="https://zekt.github.io/Blog/posts/2017-03-20-TransReport.html" />
+    <id>https://zekt.github.io/Blog/posts/2017-03-20-TransReport.html</id>
+    <published>2017-03-20T12:45:00Z</published>
+    <updated>2017-03-20T12:45:00Z</updated>
+    <summary type="html"><![CDATA[<p>透明度報告指的是由企業所定期公佈給大眾檢視、包含所有來自權力機構（如政府）對於個人資料的各式要求的報告，常見的內容有政府對該公司索取個人資料、移除內容的請求，以及該企業對這些請求的回應情形。尤其在 2013 年的史諾登事件後，越來越多公司開始主動定期發表透明度報告，以博取使用者的信任。</p>
+<h2 id="gag-order-與-warrant-canary">Gag Order 與 Warrant Canary</h2>
+<p>然而，有時政府在要求資料時甚至會依法禁止該企業與當事人公佈或發表相關言論（如美國的 Gag Order），因此有些企業為了繞過此規則會提前在每次透明度報告中加上「Warrant Canary」，Warrant Canary 的做法是在定期公佈的透明度報告中聲明該企業沒有收到禁止相關言論的調查，並在收到這種調查時將 Warrant Canary 拿掉。Canary—金絲雀的寓意取自早期礦工會帶金絲雀進入礦坑，若金絲雀死掉代表沼氣濃度過高，而礦工因此能在有生命危險前逃出。一些大型網路公司如 Apple、Reddit 都曾在透明度報告中加上 Warrant Canary，但現在都已消失。</p>
+<h2 id="台灣網路透明度報告">台灣網路透明度報告</h2>
+<p>SITCON 2017 Keynote 講者之一何明諠先生是《台灣網路透明度報告》的專案經理，由於台灣政府對於網路上的個人資料及隱私權的相關法令十分落後，甚至能在沒有標準流程與相關法令下向企業索取用戶資料，因此台權會希望透過這樣的計劃向大眾呈現政府向網路業者索取與要求移除資料的情形，並督促政府提出標準流程及法令依據，以保障所有網路使用者的基本人權。</p>
+<h2 id="參考資料">參考資料：</h2>
+<p><a href="http://transparency.tahr.org.tw">台灣網路透明報告網站</a><br />
+<a href="http://transparency.tahr.org.tw/TITR_Report_2015.pdf">台灣網路透明報告報告 PDF</a><br />
+<a href="http://www.tahr.org.tw/files/EFF_誰挺你_2014隱私年度報告摘譯.pdf">EFF 誰挺你（Who Has Your Back）2014 隱私年度報告摘譯</a><br />
+<a href="https://www.eff.org/who-has-your-back-government-data-requests-2015">EFF Who Has Your Back 2015</a><br />
+<a href="https://www.eff.org/who-has-your-back-2016">EFF Who Has Your Back 2016</a><br />
+<a href="http://ap.ohchr.org/documents/dpage_e.aspx?si=A/HRC/31/64">《聯合國隱私特別報告員 Joseph A. Cannataci 第一次隱私權報告》<br>（A/HRC/31/64｜2016年3月｜第31屆人權理事會｜中、英文）</a></p>]]></summary>
+</entry>
 
-<div class="pagination">
-  
-    <span class="pagination-item newer">Newer</span>
-  
-  
-    <a class="pagination-item older" href="./2/index.html">Older</a>
-  
-</div>
-
-      </div>
-    </div>
-
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-    <script src="https://viktorl.in/Blog/public/js/script.js"></script>
-
-  </body>
-
-</html>
+</feed>
