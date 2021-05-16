@@ -8,8 +8,6 @@ tags: 電影, 賞析
 
 ---
 
-# "Choose Life" They say.
-
 > Choose Life. Choose a job. Choose a career. Choose a family. Choose a fucking big television, choose washing machines, cars, compact disc players and electrical tin openers. Choose good health, low cholesterol, and dental insurance. Choose fixed interest mortgage repayments. Choose a starter home. Choose your friends. Choose leisurewear and matching luggage. Choose a three-piece suit on hire purchase in a range of fucking fabrics. Choose DIY and wondering who the fuck you are on Sunday morning. Choose sitting on that couch watching mind-numbing, spirit-crushing game shows, stuffing fucking junk food into your mouth. Choose rotting away at the end of it all, pissing your last in a miserable home, nothing more than an embarrassment to the selfish, fucked up brats you spawned to replace yourselves. Choose your future. Choose life…
 
 Trainspotting 風格暗沉、頹廢、暴力、情色、濫用毒品、自我放逐...至少在他們眼中是如此，那些對著你說「Choose Life」的人。「Choose Life」到底想表達什麼意思呢？以一句反毒標語來看似乎帶著一點雙關，一方面它意指這些毒蟲們放棄選擇、放棄大好前途而自我放逐，而希望他們振作、重新掌握對生命做出選擇的權力。另一方面，它又暗指這些人選擇了生命的對立面，他們的選擇不能被稱為人生——他們應該回到正軌，選擇「人生」、面對人生。但是何必呢？
