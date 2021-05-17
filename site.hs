@@ -5,7 +5,7 @@ import           Data.Monoid                   (mappend)
 import           Data.List                     (sortBy)
 import           Data.Ord                      (comparing)
 import           Hakyll
-import           Control.Monad                 (liftM, forM_)
+import           Control.Monad                 (liftM, forM_, filterM, mapM, join)
 import           System.FilePath               (takeBaseName)
 
 --------------------------------------------------------------------------------
@@ -45,6 +45,7 @@ main = hakyll $ do
 
     tagsRules tags $ \tag pattern -> do
         let title = "Posts tagged \"" ++ tag ++ "\""
+        --if tag == "電影" then route (constRoute "movies.html") else route idRoute
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll pattern
@@ -52,6 +53,10 @@ main = hakyll $ do
                       `mappend` listField "posts" (postCtxWithTags tags) (return posts)
                       `mappend` (baseSidebarCtx <> siteCtx)
 
+            --makeItem ""
+            --  >>= loadAndApplyTemplate "templates/comments.html" ctx
+            --  >>= saveSnapshot "movies"
+            
             makeItem ""
                 >>= loadAndApplyTemplate "templates/tag.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -70,8 +75,36 @@ main = hakyll $ do
             pandocCompiler
                 >>= applyAsTemplate baseNodeCtx
                 >>= saveSnapshot "content"
+--                >>= \item -> do meta <- getMetadata (itemIdentifier item)
+--                                let res = lookupStringList "tags" meta
+--                                maybe (return item) (\l -> if elem "電影" l then saveSnapshot "movies" item else return item) res
                 >>= loadAndApplyTemplate "templates/post.html" taggedPostCtx
                 >>= loadAndApplyTemplate "templates/default.html" (taggedPostCtx <> baseSidebarCtx <> siteCtx)
+                >>= relativizeUrls
+
+    create ["movies.html"] $ do
+        route idRoute
+        compile $ do
+            -- posts <- loadAllSnapshots "posts/*"  "movies"
+            allPosts <- recentFirst =<< loadAllSnapshots ("posts/*" .&&. hasNoVersion) "content"
+            let isComment item = do
+                  meta <- getMetadata (itemIdentifier item)
+                  let res = lookupStringList "tags" meta
+                  return (maybe True (elem "電影") res)
+            let oneTag item = do
+                  meta <- getMetadata (itemIdentifier item)
+                  let res = lookupStringList "tags" meta
+                  return (maybe "" head res)
+            let allTags = join (mapM oneTag allPosts)
+            selectedPosts <- filterM isComment allPosts
+            let archiveCtx =
+                    listField "posts" postCtx (return selectedPosts) `mappend`
+                    constField "title" "Movies"  `mappend`
+                    constField "movies" ""       `mappend`
+                    siteCtx
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/comments.html" archiveCtx
+                >>= loadAndApplyTemplate "templates/default.html" (baseSidebarCtx <> archiveCtx)
                 >>= relativizeUrls
 
     create ["archive.html"] $ do
@@ -167,7 +200,7 @@ siteCtx =
     defaultContext
 
 baseCtx =
-    constField "baseurl" "https://viktorl.in/Blog"
+    constField "baseurl" "http://localhost:8000"
 
 --------------------------------------------------------------------------------
 
