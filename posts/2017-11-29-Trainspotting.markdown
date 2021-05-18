@@ -1,10 +1,12 @@
 ---
 
 title: "\"Choose Life\" They say."
+movie_title1: Trainspotting
+movie_title2: 猜火車
 
 date: "2017-11-29T16:33:00+08:00"
 
-tags: 電影, 賞析
+tags: [ "電影", "賞析" ]
 
 ---
 

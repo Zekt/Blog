@@ -1,8 +1,14 @@
 My watch list:</br>
-<ul>
+<div class="movies-grid-wrapper">
     $for(posts)$
-        <li>
-            <a href="$url$">$title$</a> - $date$
-        </li>
+    <a href="$url$">
+      <small>
+        $if(movie_title1)$ $movie_title1$ $endif$
+        $if(movie_title2)$ / $movie_title2$ $endif$
+      </small>
+      </br>
+      <div class="movie-title-div"> $title$ </div> </br>
+      <small class="comment-date">$date$</small>
+    </a>
     $endfor$
-</ul>
+</div>

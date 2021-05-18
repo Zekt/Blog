@@ -1,12 +1,14 @@
 {-# LANGUAGE ViewPatterns #-}
+{-# LANGUAGE ScopedTypeVariables #-}
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid                   (mappend)
 import           Data.List                     (sortBy)
 import           Data.Ord                      (comparing)
 import           Hakyll
-import           Control.Monad                 (liftM, forM_, filterM, mapM, join)
+import           Control.Monad                 (liftM, liftM2, forM_, filterM, mapM, join, foldM)
 import           System.FilePath               (takeBaseName)
+import           MovieImage
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -91,11 +93,6 @@ main = hakyll $ do
                   meta <- getMetadata (itemIdentifier item)
                   let res = lookupStringList "tags" meta
                   return (maybe True (elem "電影") res)
-            let oneTag item = do
-                  meta <- getMetadata (itemIdentifier item)
-                  let res = lookupStringList "tags" meta
-                  return (maybe "" head res)
-            let allTags = join (mapM oneTag allPosts)
             selectedPosts <- filterM isComment allPosts
             let archiveCtx =
                     listField "posts" postCtx (return selectedPosts) `mappend`
@@ -169,7 +166,7 @@ main = hakyll $ do
 
 --------------------------------------------------------------------------------
 
-postsGrouper :: MonadMetadata m => [Identifier] -> m [[Identifier]]
+postsGrouper :: (MonadMetadata m, MonadFail m) => [Identifier] -> m [[Identifier]]
 postsGrouper = liftM (paginateEvery 3) . sortRecentFirst
 
 postsPageId :: PageNumber -> Identifier
