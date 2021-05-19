@@ -22,7 +22,7 @@ main = hakyll $ do
         compile compressCssCompiler
 
     match "error/*" $ do
-        route $ (gsubRoute "error/" (const "") `composeRoutes` setExtension "html")
+        route (gsubRoute "error/" (const "") `composeRoutes` setExtension "html")
         compile $ pandocCompiler
             >>= applyAsTemplate siteCtx
             >>= loadAndApplyTemplate "templates/default.html" (baseSidebarCtx <> siteCtx)
@@ -73,7 +73,7 @@ main = hakyll $ do
         compile $ do
             posts <- loadAll ("posts/*" .&&. hasVersion "meta")
             let taggedPostCtx = postCtxWithTags tags          `mappend`
-                                (relatedPostsCtx posts 3)
+                                relatedPostsCtx posts 3
             pandocCompiler
                 >>= applyAsTemplate baseNodeCtx
                 >>= saveSnapshot "content"
