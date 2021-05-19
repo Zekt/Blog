@@ -74,12 +74,10 @@ main = hakyll $ do
             posts <- loadAll ("posts/*" .&&. hasVersion "meta")
             let taggedPostCtx = postCtxWithTags tags          `mappend`
                                 relatedPostsCtx posts 3
+            selectedPosts <- filterM isComment posts
             pandocCompiler
                 >>= applyAsTemplate baseNodeCtx
                 >>= saveSnapshot "content"
---                >>= \item -> do meta <- getMetadata (itemIdentifier item)
---                                let res = lookupStringList "tags" meta
---                                maybe (return item) (\l -> if elem "電影" l then saveSnapshot "movies" item else return item) res
                 >>= loadAndApplyTemplate "templates/post.html" taggedPostCtx
                 >>= loadAndApplyTemplate "templates/default.html" (taggedPostCtx <> baseSidebarCtx <> siteCtx)
                 >>= relativizeUrls
@@ -89,15 +87,20 @@ main = hakyll $ do
         compile $ do
             -- posts <- loadAllSnapshots "posts/*"  "movies"
             allPosts <- recentFirst =<< loadAllSnapshots ("posts/*" .&&. hasNoVersion) "content"
-            let isComment item = do
-                  meta <- getMetadata (itemIdentifier item)
-                  let res = lookupStringList "tags" meta
-                  return (maybe True (elem "電影") res)
             selectedPosts <- filterM isComment allPosts
             let archiveCtx =
-                    listField "posts" postCtx (return selectedPosts) `mappend`
-                    constField "title" "Movies"  `mappend`
-                    constField "movies" ""       `mappend`
+                    listField "posts"
+                              (postCtx <>
+                               field
+                                 "movie_image_url"
+                                 (\item -> do
+                                     isComment item >>= \b ->
+                                       if b then getMetadataField' (itemIdentifier item) "movie_title1" >>= \x ->
+                                                 unsafeCompiler (getImg x)
+                                            else return ""))
+                               (return selectedPosts) `mappend`
+                    constField "title" "Movies"       `mappend`
+                    constField "movies" ""            `mappend`
                     siteCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/comments.html" archiveCtx
@@ -144,8 +147,8 @@ main = hakyll $ do
                     constField "title" (if page == 1 then "Home"
                                                      else "Blog posts, page " ++ show page) `mappend`
                     listField "posts" postCtx (return posts) `mappend`
-                    constField "home" "" `mappend`
-                    paginateContext paginate page `mappend`
+                    constField "home" ""                     `mappend`
+                    paginateContext paginate page            `mappend`
                     siteCtx
 
             makeItem ""
@@ -257,3 +260,9 @@ evalCtxKey context [key] item = (unContext context key [] item) >>= \cf ->
 
 getMetadataKey :: [String] -> Item String -> Compiler String
 getMetadataKey [key] item = getMetadataField' (itemIdentifier item) key
+
+isComment :: Item a -> Compiler Bool
+isComment item = do
+  meta <- getMetadata (itemIdentifier item)
+  let res = lookupStringList "tags" meta
+  return (maybe False (elem "電影") res)

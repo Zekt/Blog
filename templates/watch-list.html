@@ -1,7 +1,7 @@
 My watch list:</br>
 <div class="movies-grid-wrapper">
     $for(posts)$
-    <a href="$url$">
+    <a class = "movie-block" href="$url$" $if(movie_image_url)$style="background: url('https://image.tmdb.org/t/p/w500$movie_image_url$'),rgba(255, 255, 255, 0.4);"$endif$>
       <small>
         $if(movie_title1)$ $movie_title1$ $endif$
         $if(movie_title2)$ / $movie_title2$ $endif$
