@@ -1,6 +1,6 @@
 ---
 
-title: "\"Choose Life\" They say."
+title: "\"Choose Life.\""
 movie_title1: Trainspotting
 movie_title2: 猜火車
 

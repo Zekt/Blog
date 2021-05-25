@@ -2,6 +2,7 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+import           Data.Maybe                    (fromMaybe)
 import           Data.Monoid                   (mappend)
 import           Data.List                     (sortBy)
 import           Data.Ord                      (comparing)
@@ -95,8 +96,9 @@ main = hakyll $ do
                                  "movie_image_url"
                                  (\item -> do
                                      isComment item >>= \b ->
-                                       if b then getMetadataField' (itemIdentifier item) "movie_title1" >>= \x ->
-                                                 unsafeCompiler (getImg x)
+                                       if b then getMetadataField' (itemIdentifier item) "movie_title1" >>= \name ->
+                                                 getMetadataField (itemIdentifier item) "year" >>= \year ->
+                                                 unsafeCompiler (getImg name $ fromMaybe "" year)
                                             else return ""))
                                (return selectedPosts) `mappend`
                     constField "title" "Movies"       `mappend`
