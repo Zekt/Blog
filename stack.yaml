@@ -5,3 +5,4 @@ extra-deps:
   - hakyll-4.14.0.0
   - req-3.8.0
   - aeson-1.5.6.0
+  - file-embed-0.0.13.0
