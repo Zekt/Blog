@@ -130,7 +130,6 @@ main = hakyll $ do
             tagCloud <- renderTagCloud 100.0 300.0 tags
             let tagsCtx =
                     constField "tags" tagCloud     `mappend`
-                    constField "title" "Tag Cloud" `mappend`
                     constField "tag-cloud" ""      `mappend`
                     siteCtx
 
@@ -172,7 +171,7 @@ main = hakyll $ do
 --------------------------------------------------------------------------------
 
 postsGrouper :: (MonadMetadata m, MonadFail m) => [Identifier] -> m [[Identifier]]
-postsGrouper = liftM (paginateEvery 3) . sortRecentFirst
+postsGrouper = liftM (paginateEvery 5) . sortRecentFirst
 
 postsPageId :: PageNumber -> Identifier
 postsPageId n = fromFilePath $ if (n == 1) then "index.html" else show n ++ "/index.html"
