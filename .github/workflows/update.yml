@@ -1,7 +1,7 @@
 name: Update Blog
 on: [push]
 jobs:
-  Build and Deploy the Blog:
+  Build_and_Deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
