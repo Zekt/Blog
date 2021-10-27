@@ -5,11 +5,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Cache ~/.cabal/packages, ~/.cabal/store and dist-newstyle
+        uses: actions/cache@v2
+        with:
+        path: |
+          ~/.cabal/packages
+          ~/.cabal/store
+          dist-newstyle
+        key: ${{ runner.os }}-${{ matrix.ghc }}
       - uses: haskell/actions/setup@v1
         with:
-          ghc-version: '8.10' # Resolves to the latest point release of GHC 8.8
-          cabal-version: '3.4.0.0' # Exact version of Cabal
+          ghc-version: '8.10'
+          cabal-version: '3.4.0.0'
       - name: Build the hakyll site program
         run: cabal build
       - name: Build the site
         run: cabal run site build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
