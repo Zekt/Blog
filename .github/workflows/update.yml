@@ -10,4 +10,4 @@ jobs:
           ghc-version: '8.10' # Resolves to the latest point release of GHC 8.8
           cabal-version: '3.4.0.0' # Exact version of Cabal
       - name: testing cabal
-      - run: cabal -V
+        run: cabal -V
