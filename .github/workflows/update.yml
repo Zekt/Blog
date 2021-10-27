@@ -1,18 +1,18 @@
 name: Update Blog
 on: [push]
 jobs:
-  Test:
+  Build and Deploy the Blog:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Cache ~/.cabal/packages, ~/.cabal/store and dist-newstyle
         uses: actions/cache@v2
         with:
-        path: |
-          ~/.cabal/packages
-          ~/.cabal/store
-          dist-newstyle
-        key: ${{ runner.os }}-${{ matrix.ghc }}
+          path: |
+            ~/.cabal/packages
+            ~/.cabal/store
+            dist-newstyle
+          key: ${{ runner.os }}-${{ matrix.ghc }}
       - uses: haskell/actions/setup@v1
         with:
           ghc-version: '8.10'
