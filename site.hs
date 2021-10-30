@@ -9,11 +9,36 @@ import           Data.Ord                      (comparing)
 import           Hakyll
 import           Control.Monad                 (liftM, liftM2, forM_, filterM, mapM, join, foldM)
 import           System.FilePath               (takeBaseName)
+import           System.Environment            (getArgs)
 import           MovieImage
 
 --------------------------------------------------------------------------------
+
 main :: IO ()
-main = hakyll $ do
+main = getArgs >>= \args ->
+    let baseCtx = if elem "watch" args
+                      then constField "baseurl" "http://localhost:8000"
+                      else constField "baseurl" "https://viktorl.in/Blog"
+        siteCtx :: Context String
+        siteCtx =
+            baseCtx `mappend`
+            constField "site_description" "" `mappend`
+            constField "site-url" "https://zekt.github.io/Blog" `mappend`
+            constField "tagline" "& Absurd Reasoning" `mappend`
+            constField "site-title" "Literally Programming" `mappend`
+            constField "copy-year" "2021" `mappend`
+            constField "github-repo" "https://github.com/Zekt/Blog" `mappend`
+            defaultContext
+
+        baseNodeCtx :: Context String
+        baseNodeCtx =
+            urlField "node-url" `mappend`
+            titleField "title" `mappend`
+            baseCtx
+        
+        baseSidebarCtx = sidebarCtx baseNodeCtx
+    in
+    hakyll $ do
     match ("images/**" .||. "js/*") $ do
         route   idRoute
         compile copyFileCompiler
@@ -189,23 +214,6 @@ feedConfig = FeedConfiguration
 
 --------------------------------------------------------------------------------
 
-siteCtx :: Context String
-siteCtx =
-    baseCtx `mappend`
-    constField "site_description" "" `mappend`
-    constField "site-url" "https://zekt.github.io/Blog" `mappend`
-    constField "tagline" "& Absurd Reasoning" `mappend`
-    constField "site-title" "Literally Programming" `mappend`
-    constField "copy-year" "2021" `mappend`
-    constField "github-repo" "https://github.com/Zekt/Blog" `mappend`
-    defaultContext
-
-baseCtx =
-    --constField "baseurl" "http://localhost:8000"
-    constField "baseurl" "https://viktorl.in/Blog"
-
---------------------------------------------------------------------------------
-
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
@@ -246,13 +254,6 @@ sidebarCtx nodeCtx =
     listField "list_pages" nodeCtx (loadAllSnapshots ("pages/*" .&&. hasNoVersion) "page-content") `mappend`
     defaultContext
 
-baseNodeCtx :: Context String
-baseNodeCtx =
-    urlField "node-url" `mappend`
-    titleField "title" `mappend`
-    baseCtx
-
-baseSidebarCtx = sidebarCtx baseNodeCtx
 
 evalCtxKey :: Context String -> [String] -> Item String -> Compiler String
 evalCtxKey context [key] item = (unContext context key [] item) >>= \cf ->
