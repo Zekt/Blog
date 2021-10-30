@@ -12,11 +12,12 @@ jobs:
             ~/.cabal/packages
             ~/.cabal/store
             dist-newstyle
+            .stack-work
           key: ${{ runner.os }}-${{ matrix.ghc }}
       - uses: haskell/actions/setup@v1
         with:
-          ghc-version: '8.10'
-          cabal-version: '3.4.0.0'
+          ghc-version: 'latest'
+          cabal-version: 'latest'
       - name: Build the hakyll site program
         run: cabal build
       - name: Build the site
