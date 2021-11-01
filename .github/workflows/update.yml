@@ -15,8 +15,6 @@ jobs:
           for f in $(git ls-tree -r -t --full-name --name-only "$rev") ; do
               touch -d $(git log --pretty=format:%cI -1 "$rev" -- "$f") "$f";
           done
-      - name: Freeze Cabal plan
-        run: cabal freeze
       - name: Cache ~/.cabal/packages, ~/.cabal/store and dist-newstyle
         uses: actions/cache@v2
         with:
