@@ -21,7 +21,7 @@ jobs:
       - name: Build the hakyll program
         run: cabal build --ghc-option=-O0
       - name: Build the site
-        run: cabal run site build
+        run: cabal run site -O2 -- build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
