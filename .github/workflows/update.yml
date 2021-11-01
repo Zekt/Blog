@@ -7,6 +7,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: Set git for printing unicodes
+        run: git config --global core.quotepath off
       - name: Set all tracked file modification times to the time of their last commit
         run: |
           rev=HEAD
