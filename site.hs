@@ -119,12 +119,11 @@ main = getArgs >>= \args ->
                               (postCtx <>
                                field
                                  "movie_image_url"
-                                 (\item -> do
-                                     isComment item >>= \b ->
-                                       if b then getMetadataField' (itemIdentifier item) "movie_title1" >>= \name ->
-                                                 getMetadataField (itemIdentifier item) "year" >>= \year ->
-                                                 unsafeCompiler (getImg name $ fromMaybe "" year)
-                                            else return ""))
+                                 (\item -> do b <- isComment item
+                                              if b then getMetadataField' (itemIdentifier item) "movie_title1" >>= \name ->
+                                                        getMetadataField (itemIdentifier item) "year" >>= \year ->
+                                                        unsafeCompiler (getImg name $ fromMaybe "" year)
+                                                   else return ""))
                                (return selectedPosts) `mappend`
                     constField "title" "Movies"       `mappend`
                     constField "movies" ""            `mappend`
@@ -264,8 +263,9 @@ evalCtxKey context [key] item = (unContext context key [] item) >>= \cf ->
 getMetadataKey :: [String] -> Item String -> Compiler String
 getMetadataKey [key] item = getMetadataField' (itemIdentifier item) key
 
-isComment :: Item a -> Compiler Bool
+isComment :: Item a -> Compiler (Maybe Category)
 isComment item = do
   meta <- getMetadata (itemIdentifier item)
   let res = lookupStringList "tags" meta
-  return (maybe False (elem "電影") res)
+  return _
+  --return (maybe False (elem "電影" | elem ) res)
