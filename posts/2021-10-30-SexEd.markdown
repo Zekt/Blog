@@ -3,7 +3,7 @@
 title: "我們沒經歷過的青春自修室"
 movie_title1: Sex Education
 movie_title2: 性愛自修室 
-tags: [ "電影", "影集", "賞析" ]
+tags: [ "影集", "賞析" ]
 year: 2019
 
 ---
