@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE LambdaCase #-}
 
 module MovieImage where
 
@@ -10,6 +11,11 @@ import Network.HTTP.Req
 
 data MovieInfo = MovieInfo { imgUrl :: String }
 data Category = Movie | TV
+
+tagName :: Category -> String
+tagName = \case
+  Movie -> "movie"
+  TV    -> "tv"
 
 instance FromJSON MovieInfo where
     parseJSON = withObject "response object" $ \o -> do
@@ -32,13 +38,13 @@ getImg category movieName year = runReq defaultHttpConfig $ do
   let apiKey = "a2a1775c85aa5feced8de95a9c8370f7"
   -- One function—full power and flexibility, automatic retrying on timeouts
   -- and such, automatic connection sharing.
-  let category = case cat of
-              Movie = "movie"
-              TV    = "tv"
+  let cat = case category of
+              Movie -> "movie"
+              TV    -> "tv"
   r <- req GET
-           (https "api.themoviedb.org" /: "3" /: "search" /: category)
+           (https "api.themoviedb.org" /: "3" /: "search" /: cat)
            NoReqBody
            jsonResponse
-           ("api_key" =: (apiKey :: String) <> "query" =: (movieName :: String) <> "year" =: year <> "include_adult" =: ("true" :: String))
+           ("api_key" =: (apiKey :: String) <> "query" =: (movieName :: String) <> "year" =: year)
   let p = parseMaybe (parseJSON :: Value -> Parser MovieInfo) (responseBody r)
-  return $ maybe "Parsing Failed\n" imgUrl p
+  return $ maybe "Parsing Failed" imgUrl p

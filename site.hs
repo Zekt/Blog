@@ -1,8 +1,9 @@
 {-# LANGUAGE ViewPatterns #-}
+{-# LANGUAGE LambdaCase #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Maybe                    (fromMaybe)
+import           Data.Maybe
 import           Data.Monoid                   (mappend)
 import           Data.List                     (sortBy)
 import           Data.Ord                      (comparing)
@@ -100,7 +101,6 @@ main = getArgs >>= \args ->
             posts <- loadAll ("posts/*" .&&. hasVersion "meta")
             let taggedPostCtx = postCtxWithTags tags          `mappend`
                                 relatedPostsCtx posts 3
-            selectedPosts <- filterM isComment posts
             pandocCompiler
                 >>= applyAsTemplate baseNodeCtx
                 >>= saveSnapshot "content"
@@ -111,27 +111,43 @@ main = getArgs >>= \args ->
     create ["movies.html"] $ do
         route idRoute
         compile $ do
-            -- posts <- loadAllSnapshots "posts/*"  "movies"
-            allPosts <- recentFirst =<< loadAllSnapshots ("posts/*" .&&. hasNoVersion) "content"
-            selectedPosts <- filterM isComment allPosts
+            posts <- recentFirst =<< loadAllSnapshots ("posts/*" .&&. hasNoVersion) "content"
+            selectedPosts <- filterM (fmap isJust . isComment) posts
+            let ctx = postCtx <>
+                      field
+                        "movie_image_url"
+                        (\item -> isComment item >>= \case
+                                    Just c -> getMetadataField' (itemIdentifier item) "movie_title1" >>= \name ->
+                                              getMetadataField (itemIdentifier item) "year" >>= \year ->
+                                              unsafeCompiler (getImg c name $ fromMaybe "" year)
+                                    Nothing -> return "")
             let archiveCtx =
-                    listField "posts"
-                              (postCtx <>
-                               field
-                                 "movie_image_url"
-                                 (\item -> do b <- isComment item
-                                              if b then getMetadataField' (itemIdentifier item) "movie_title1" >>= \name ->
-                                                        getMetadataField (itemIdentifier item) "year" >>= \year ->
-                                                        unsafeCompiler (getImg name $ fromMaybe "" year)
-                                                   else return ""))
-                               (return selectedPosts) `mappend`
-                    constField "title" "Movies"       `mappend`
-                    constField "movies" ""            `mappend`
+                    listField "posts" ctx (return selectedPosts) `mappend`
+                    constField "title" "Movies"                  `mappend`
+                    constField "movies" ""                       `mappend`
                     siteCtx
+
             makeItem ""
                 >>= loadAndApplyTemplate "templates/comments.html" archiveCtx
                 >>= loadAndApplyTemplate "templates/default.html" (baseSidebarCtx <> archiveCtx)
                 >>= relativizeUrls
+            --let archiveCtx =
+            --        constField "title" "Movies"       `mappend`
+            --        constField "movies" ""            
+            --        siteCtx
+            --        --listField "posts"
+            --        --          (postCtx <>
+            --        --           field
+            --        --             "movie_image_url"
+            --        --             (\item -> case isComment item of
+            --        --                         Just _ -> getMetadataField' (itemIdentifier item) "movie_title1" >>= \name ->
+            --        --                                   getMetadataField (itemIdentifier item) "year" >>= \year ->
+            --        --                                   unsafeCompiler (getImg name $ fromMaybe "" year)
+            --        --                         Nothing -> return "")
+            --        --          (return selectedPosts) `mappend`
+            --    >>= loadAndApplyTemplate "templates/comments.html" archiveCtx
+            --    >>= loadAndApplyTemplate "templates/default.html" (baseSidebarCtx <> archiveCtx)
+            --    >>= relativizeUrls
 
     create ["archive.html"] $ do
         route idRoute
@@ -198,7 +214,7 @@ postsGrouper :: (MonadMetadata m, MonadFail m) => [Identifier] -> m [[Identifier
 postsGrouper = liftM (paginateEvery 5) . sortRecentFirst
 
 postsPageId :: PageNumber -> Identifier
-postsPageId n = fromFilePath $ if (n == 1) then "index.html" else show n ++ "/index.html"
+postsPageId n = fromFilePath $ if n == 1 then "index.html" else show n ++ "/index.html"
 
 --------------------------------------------------------------------------------
 
@@ -255,10 +271,9 @@ sidebarCtx nodeCtx =
 
 
 evalCtxKey :: Context String -> [String] -> Item String -> Compiler String
-evalCtxKey context [key] item = (unContext context key [] item) >>= \cf ->
-        case cf of
+evalCtxKey context [key] item = unContext context key [] item >>= \case
             StringField s -> return s
-            _             -> error $ "Internal error: StringField expected"
+            _             -> error "Internal error: StringField expected"
 
 getMetadataKey :: [String] -> Item String -> Compiler String
 getMetadataKey [key] item = getMetadataField' (itemIdentifier item) key
@@ -266,6 +281,9 @@ getMetadataKey [key] item = getMetadataField' (itemIdentifier item) key
 isComment :: Item a -> Compiler (Maybe Category)
 isComment item = do
   meta <- getMetadata (itemIdentifier item)
-  let res = lookupStringList "tags" meta
-  return _
-  --return (maybe False (elem "電影" | elem ) res)
+  return $ lookupStringList "tags" meta >>= f
+  where
+    f res 
+      | "電影" `elem` res = Just Movie
+      | "影集" `elem` res = Just TV
+      | otherwise = Nothing
