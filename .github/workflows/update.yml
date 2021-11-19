@@ -27,7 +27,7 @@ jobs:
           key: ${{ runner.os }}-${{ matrix.ghc }}
       - uses: haskell/actions/setup@v1
         with:
-          ghc-version: '8.10'
+          ghc-version: '9.0'
           cabal-version: '3.4'
       - name: Build the hakyll program and the site
         run: cabal run site -O0 -- build
