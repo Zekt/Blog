@@ -28,7 +28,7 @@ jobs:
       - uses: haskell/actions/setup@v1
         with:
           ghc-version: '9.0'
-          cabal-version: '3.4'
+          cabal-version: '3.6'
       - name: Build the hakyll program and the site
         run: cabal run site -O0 -- build
       - name: Deploy
