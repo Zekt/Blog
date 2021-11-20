@@ -10,6 +10,13 @@
     $if(home)$
       $site-title$ &middot; $tagline$
     $else$
+      $if(movie_title2)$
+        $movie_title2$：
+      $else$
+        $if(movie_title1)$
+          $movie_title1$:
+        $endif$
+      $endif$
       $title$ &middot; $site-title$
     $endif$
   </title>

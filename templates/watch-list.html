@@ -1,13 +1,17 @@
 <div class="movies-grid-wrapper">
     $for(posts)$
-    <a class = "movie-block" href="$url$" $if(movie_image_url)$style="background-image: url('https://image.tmdb.org/t/p/w500$movie_image_url$');"$endif$>
-      <small>
-        $if(movie_title1)$ $movie_title1$ $endif$
-        $if(movie_title2)$ / $movie_title2$ $endif$
-      </small>
-      </br>
-      <div class="movie-title-div"> $title$ </div> </br>
-      <small class="comment-date">$date$</small>
-    </a>
+    <div class="wrapper">
+      <a class = "movie-block" $if(movie_image_url)$style="background-image: url('https://image.tmdb.org/t/p/w500$movie_image_url$');"$endif$>
+      </a>
+      <a class="movie-text" href="$url$">
+        <small>
+          $if(movie_title1)$ $movie_title1$ $endif$
+          $if(movie_title2)$ / $movie_title2$ $endif$
+        </small>
+        </br>
+        <div class="movie-title-div"> $title$ </div> </br>
+        <small class="comment-date">$date$</small>
+      </a>
+    </div>
     $endfor$
 </div>

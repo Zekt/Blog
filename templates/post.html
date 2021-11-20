@@ -1,7 +1,13 @@
 <div class="post">
     <h1 class="post-title">
       <a href="$url$">
-        $title$
+        $if(movie_title2)$
+          《$movie_title2$》：
+        $else$
+          $if(movie_title1)$
+            $movie_title1$:
+          $endif$
+        $endif$$title$
       </a>
     </h1>
     <span class="post-date">$date$,
