@@ -1,6 +1,6 @@
 ---
 
-title: "《新世紀福音戰士》解析：存在的焦慮令人窒息"
+title: "存在的焦慮令人窒息"
 movie_title1: Neon Genesis Evangelion
 movie_title2: 新世紀福音戰士
 date: "2019-07-01T00:00:00+08:00"
