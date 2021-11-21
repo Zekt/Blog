@@ -1,6 +1,6 @@
 ---
 
-title: "致不曾存在的青春自修課"
+title: "但願曾有的青春自修課"
 movie_title1: Sex Education
 movie_title2: 性愛自修室 
 tags: [ "影集", "賞析" ]

@@ -82,10 +82,6 @@ main = getArgs >>= \args ->
                       `mappend` listField "posts" (postCtxWithTags tags) (return posts)
                       `mappend` (baseSidebarCtx <> siteCtx)
 
-            --makeItem ""
-            --  >>= loadAndApplyTemplate "templates/comments.html" ctx
-            --  >>= saveSnapshot "movies"
-            
             makeItem ""
                 >>= loadAndApplyTemplate "templates/tag.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -131,23 +127,6 @@ main = getArgs >>= \args ->
                 >>= loadAndApplyTemplate "templates/comments.html" archiveCtx
                 >>= loadAndApplyTemplate "templates/default.html" (baseSidebarCtx <> archiveCtx)
                 >>= relativizeUrls
-            --let archiveCtx =
-            --        constField "title" "Movies"       `mappend`
-            --        constField "movies" ""            
-            --        siteCtx
-            --        --listField "posts"
-            --        --          (postCtx <>
-            --        --           field
-            --        --             "movie_image_url"
-            --        --             (\item -> case isComment item of
-            --        --                         Just _ -> getMetadataField' (itemIdentifier item) "movie_title1" >>= \name ->
-            --        --                                   getMetadataField (itemIdentifier item) "year" >>= \year ->
-            --        --                                   unsafeCompiler (getImg name $ fromMaybe "" year)
-            --        --                         Nothing -> return "")
-            --        --          (return selectedPosts) `mappend`
-            --    >>= loadAndApplyTemplate "templates/comments.html" archiveCtx
-            --    >>= loadAndApplyTemplate "templates/default.html" (baseSidebarCtx <> archiveCtx)
-            --    >>= relativizeUrls
 
     create ["archive.html"] $ do
         route idRoute
