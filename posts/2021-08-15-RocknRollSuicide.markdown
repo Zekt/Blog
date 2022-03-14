@@ -58,7 +58,7 @@ tags: 雜緒
 >
 > They're so natural - religiously unkind
 >
-> 他們是如此自然——宗教般地不友善！
+> 他們是如此自然——信仰般地不友善！
 >
 > Oh no love! you're not alone
 >
@@ -70,7 +70,7 @@ tags: 雜緒
 >
 > You got your head all tangled up but if I could only make you care
 >
-> 你讓你的腦袋打結，但只願我能讓你在意
+> 你讓你的腦袋盤根錯節，但只願我能讓你知道
 >
 > Oh no love! you're not alone
 >
@@ -98,15 +98,15 @@ tags: 雜緒
 >
 > Just turn on with me and you're not alone
 >
-> 儘管與我一起開啟[^1]而你便不孤單
+> 儘管與我一起 Turn On [^1] 而你便不會孤單
 >
 > Let's turn on with me and you're not alone
 >
-> 與我一起開啟而你便不孤單
+> 與我一起 Turn On 而你便不會孤單
 >
 > Let's turn on and be not alone
 >
-> 一起開啟而你便不孤單
+> Turn On 而你便不會孤單
 >
 > Gimme your hands cause you're wonderful
 >
@@ -134,7 +134,7 @@ tags: 雜緒
 
 > Too old to lose it, too young to choose it. 
 
-「頭已經洗下去了」，我早已無法將這段路拋諸腦後，也沒有以前好像隨時都能開創什麼的能力了。悲劇只有在被意識到時才是痛苦的，在伊底帕斯意識到命運的那一刻悲劇才成立。那是早知道還是晚知道命運更有悲劇性呢？對卡繆來說應該是早知道吧，但我想並不是因為英雄會因意識到未來無法改變而痛苦，而是他還沒有能力接受漫無意義的來日。也許再些許時日，我真能學著從荒謬中體會出快樂。
+「頭已經洗下去了」，我早已無法將這段路拋諸腦後，也沒有以前好像隨時都能開創什麼的能力了。悲劇在伊底帕斯意識到命運的那一刻才成立。那是早知道還是晚知道命運更有悲劇性呢？應該是早知道吧，但我想並不是因為人會因意識到未來無法改變而痛苦，而是他還沒有能力接受漫無意義的來日。也許再些許時日，我真能學著從荒謬中體會出快樂。
 
 > And the clock waits so patiently on your song.
 
@@ -144,10 +144,10 @@ tags: 雜緒
 
 曾經搖滾而依然年輕的 Ziggy Stardust 卻風華不再，搖滾自殺。我是不是也無法面對看似有創造性的過去的自己？當然，我不是任何意義上的搖滾奇才。我僅能做到的是哲學自殺——不再想從文本中得到什麼終極指引。我還無法成為卡繆所認識的《群魔》中的 Kirilov，因為我對世界沒有愛。
 
-畢業後帶著有點荒謬的心讀著 Category Theory、Type Theory，偶爾搭配一點邏輯。既感恩又不耐地寫著 Haskell 與 Agda 程式。雖然是意料中的事，但學習的內容越純粹我對生活越倍感疏離。我還無法確定自己想活在程式語言與數學之中，因為這裡充滿了只問嚴謹不問意義的偽分析哲學。
+畢業後帶著有點荒謬的心讀著 Category Theory、Type Theory，偶爾搭配一點邏輯。既感恩又不耐地寫著 Haskell 與 Agda 程式。雖然是意料中的事，但學習的內容越純粹我對生活越倍感疏離。我還無法確定自己想活在程式語言與數學之中，因為這裡只問嚴謹不問意義。
 
 > Oh no, love, you’re not alone. You're watching yourself but you're too unfair.
 
-但無論是搖滾自殺還是哲學自殺，我都只能體會一半而已。這種否定之後的快樂在哪、慰藉在哪呢？我何時能用轉瞬即逝的熱情說出「All is well」呢？我能感受到 David Bowie 盡力了，他並不催促人好起來。就像伴侶能做到最好，也是我現在所受到最好的待遇，就是提醒我我不孤單。我應當想像自己是快樂的。
+但無論是搖滾自殺還是哲學自殺，我都只能體會一半而已。這種否定之後的快樂在哪、慰藉在哪呢？我何時能用轉瞬即逝的熱情說出「All is well」呢？我能感受到 David Bowie 盡力了，他並不催促人好起來。我現在能做的就是提醒自己我不孤單。我應當想像自己是快樂的。
 
 [^1]: [Turn on, tune in, drop out](https://en.wikipedia.org/wiki/Turn_on,_tune_in,_drop_out)

@@ -1,0 +1,8 @@
+---
+
+title: "Monad 最終補完"
+tags: [ "Programming Language" ]
+
+---
+
+這可能是目前這個部落格唯一一篇我確定知道自己在寫什麼的東西。這篇文只有一個目的：完整解釋 Monad 是什麼。

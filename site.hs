@@ -25,7 +25,7 @@ main = getArgs >>= \args ->
             baseCtx `mappend`
             constField "site_description" "" `mappend`
             constField "site-url" "https://zekt.github.io/Blog" `mappend`
-            constField "tagline" "& Absurd Reasoning" `mappend`
+            constField "tagline" "我只寫我不確定的事" `mappend`
             constField "site-title" "Literally Programming" `mappend`
             constField "copy-year" "2021" `mappend`
             constField "github-repo" "https://github.com/Zekt/Blog" `mappend`
